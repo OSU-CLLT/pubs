@@ -1,0 +1,2266 @@
+@COMMENT Let's keep this alphabetical...
+@COMMENT
+@COMMENT 1. An "official" ACL anthology .bib with standardized fields can be downloaded for papers from '04 or so
+@COMMENT    onwards and includes a permanent "url" field to a PDF (preferable to linking to your copy of the .pdf
+@COMMENT    unless you have a corrected/updated version of the paper.
+@COMMENT
+@COMMENT    To make adding ACL .bib entries easier, "url" field is assumed to always be "pdf", so don't use it for
+@COMMENT    other file types (use instead "documenturl" for generic URLs)
+@COMMENT
+@COMMENT 2. You can also specify slides={url} or poster={url}
+@COMMENT
+@COMMENT 3. It's much faster to identify the conference if you append the conference acronym (e.g. HLT-EMNLP'05) to the "booktitle" field
+@COMMENT
+@COMMENT 4. Please be sure your entries are correctly formatted (e.g. by testing them in overleaf) before pasting them in here!
+
+@inproceedings{aljanaideh-etal-2020-contextualized,
+    title = "Contextualized Embeddings for Enriching Linguistic Analyses on Politeness",
+    author = "Aljanaideh, Ahmad  and
+      Fosler-Lussier, Eric  and
+      de Marneffe, Marie-Catherine",
+    booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
+    month = dec,
+    year = "2020",
+    address = "Barcelona, Spain (Online)",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2020.coling-main.198",
+    doi = "10.18653/v1/2020.coling-main.198",
+    pages = "2181--2190",
+    abstract = "Linguistic analyses in natural language processing (NLP) have often been performed around the static notion of words where the context (surrounding words) is not considered. For example, previous analyses on politeness have focused on comparing the use of static words such as personal pronouns across (im)polite requests without taking the context of those words into account. Current word embeddings in NLP do capture context and thus can be leveraged to enrich linguistic analyses. In this work, we introduce a model which leverages the pre-trained BERT model to cluster contextualized representations of a word based on (1) the context in which the word appears and (2) the labels of items the word occurs in. Using politeness as case study, this model is able to automatically discover interpretable, fine-grained context patterns of words, some of which align with existing theories on politeness. Our model further discovers novel finer-grained patterns associated with (im)polite language. For example, the word please can occur in impolite contexts that are predictable from BERT clustering. The approach proposed here is validated by showing that features based on fine-grained patterns inferred from the clustering improve over politeness-word baselines.",
+}
+
+@inproceedings{antetomaso-bucld-16,
+ author = {Antetomaso, Stephanie and Miyazawa, Kouki and Feldman, Naomi and Elsner, Micha and Hitczenko, Kasia and Mazuka, Reiko},
+ title = {Modeling phonetic category learning from natural acoustic data},
+ booktitle = {Proceedings of Boston University Conference on Language Development (BUCLD)},
+ year = {2017},
+ month = {January},
+ address = {Boston, MA}
+}
+
+@inproceedings{arun-etal-2020-best,
+    title = "Best Practices for Data-Efficient Modeling in {NLG}:How to Train Production-Ready Neural Models with Less Data",
+    author = "Arun, Ankit  and
+      Batra, Soumya  and
+      Bhardwaj, Vikas  and
+      Challa, Ashwini  and
+      Donmez, Pinar  and
+      Heidari, Peyman  and
+      Inan, Hakan  and
+      Jain, Shashank  and
+      Kumar, Anuj  and
+      Mei, Shawn  and
+      Mohan, Karthik  and
+      White, Michael",
+    booktitle = "Proceedings of the 28th International Conference on Computational Linguistics: Industry Track",
+    month = dec,
+    year = "2020",
+    address = "Online",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2020.coling-industry.7",
+    doi = "10.18653/v1/2020.coling-industry.7",
+    pages = "64--77",
+    abstract = "Natural language generation (NLG) is a critical component in conversational systems, owing to its role of formulating a correct and natural text response. Traditionally, NLG components have been deployed using template-based solutions. Although neural network solutions recently developed in the research community have been shown to provide several benefits, deployment of such model-based solutions has been challenging due to high latency, correctness issues, and high data needs. In this paper, we present approaches that have helped us deploy data-efficient neural solutions for NLG in conversational systems to production. We describe a family of sampling and modeling techniques to attain production quality with light-weight neural network models using only a fraction of the data that would be necessary otherwise, and show a thorough comparison between each. Our results show that domain complexity dictates the appropriate approach to achieve high data efficiency. Finally, we distill the lessons from our experimental findings into a list of best practices for production-level NLG model development, and present them in a brief runbook. Importantly, the end products of all of the techniques are small sequence-to-sequence models ({\textasciitilde}2Mb) that we can reliably deploy in production. These models achieve the same quality as large pretrained models ({\textasciitilde}1Gb) as judged by human raters.",
+}
+
+@inproceedings{bagchi2018spectral,
+  author    = {Bagchi, Deblin and Plantinga, Peter and Stiff, Adam and Fosler-Lussier, Eric},
+  title     = {Spectral Feature Mapping with Mimic Loss for Robust Speech Recognition},
+  booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  year      = {2018},
+  month     = {April},
+  location  = {Calgary, Alberta},
+  url       = {https://arxiv.org/abs/1803.09816},
+}
+
+@inproceedings{bakshi-etal-2021-structure,
+    title = "Structure-to-Text Generation with Self-Training, Acceptability Classifiers and Context-Conditioning for the {GEM} Shared Task",
+    author = "Bakshi, Shreyan  and
+      Batra, Soumya  and
+      Heidari, Peyman  and
+      Arun, Ankit  and
+      Jain, Shashank  and
+      White, Michael",
+    booktitle = "Proceedings of the 1st Workshop on Natural Language Generation, Evaluation, and Metrics (GEM 2021)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.gem-1.12",
+    doi = "10.18653/v1/2021.gem-1.12",
+    pages = "136--147",
+    abstract = "We explore the use of self-training and acceptability classifiers with pre-trained models for natural language generation in structure-to-text settings using three GEM datasets (E2E, WebNLG-en, Schema-Guided Dialog). With the Schema-Guided Dialog dataset, we also experiment with including multiple turns of context in the input. We find that self-training with reconstruction matching along with acceptability classifier filtering can improve semantic correctness, though gains are limited in the full-data setting. With context-conditioning, we find that including multiple turns in the context encourages the model to align with the user{'}s word and phrasing choices as well as to generate more self-consistent responses. In future versions of the GEM challenge, we encourage the inclusion of few-shot tracks to encourage research on data efficiency.",
+}
+
+@inproceedings{balakrishnan-etal-2019-constrained,
+    title = "Constrained Decoding for Neural {NLG} from Compositional Representations in Task-Oriented Dialogue",
+    author = "Balakrishnan, Anusha  and
+      Rao, Jinfeng  and
+      Upasani, Kartikeya  and
+      White, Michael  and
+      Subba, Rajen",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/P19-1080",
+    pages = "831--844",
+    abstract = "Generating fluent natural language responses from structured semantic representations is a critical step in task-oriented conversational systems. Avenues like the E2E NLG Challenge have encouraged the development of neural approaches, particularly sequence-to-sequence (Seq2Seq) models for this problem. The semantic representations used, however, are often underspecified, which places a higher burden on the generation model for sentence planning, and also limits the extent to which generated responses can be controlled in a live system. In this paper, we (1) propose using tree-structured semantic representations, like those used in traditional rule-based NLG systems, for better discourse-level structuring and sentence-level planning; (2) introduce a challenging dataset using this representation for the weather domain; (3) introduce a constrained decoding approach for Seq2Seq models that leverages this representation to improve semantic correctness; and (4) demonstrate promising results on our dataset and the E2E dataset.",
+}
+
+@inproceedings{WNUT,
+ author={Baldwin, Timothy and Kim, Young-Bum and de Marneffe, Marie-Catherine and Ritter, Alan and Han, Bo and Xu, Wei},
+  title={Shared tasks of the 2015 workshop on noisy user-generated text: Twitter lexical normalization and named entity recognition},
+ booktitle={Proceedings of ACL 2015 Workshop on Noisy User-generated Text (WNUT)},
+ year={2015}
+ }
+
+@inproceedings{Betteridge2014assuming,
+  author    = {Betteridge, Justin and Ritter, Alan and Mitchell, Tom M.},
+  title     = {Assuming Facts Are Expressed More Than Once},
+  booktitle = {Proceedings of the Twenty-Seventh International Florida Artificial Intelligence Research Society Conference},
+  year      = {2014},
+  url       = {http://www.aaai.org/ocs/index.php/FLAIRS/FLAIRS14/paper/view/7883},
+}
+
+@inproceedings{batra-etal-2021-building,
+    title = "Building Adaptive Acceptability Classifiers for Neural {NLG}",
+    author = "Batra, Soumya  and
+      Jain, Shashank  and
+      Heidari, Peyman  and
+      Arun, Ankit  and
+      Youngs, Catharine  and
+      Li, Xintong  and
+      Donmez, Pinar  and
+      Mei, Shawn  and
+      Kuo, Shiunzu  and
+      Bhardwaj, Vikas  and
+      Kumar, Anuj  and
+      White, Michael",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.53",
+    doi = "10.18653/v1/2021.emnlp-main.53",
+    pages = "682--697",
+    abstract = "We propose a novel framework to train models to classify acceptability of responses generated by natural language generation (NLG) models, improving upon existing sentence transformation and model-based approaches. An NLG response is considered acceptable if it is both semantically correct and grammatical. We don{'}t make use of any human references making the classifiers suitable for runtime deployment. Training data for the classifiers is obtained using a 2-stage approach of first generating synthetic data using a combination of existing and new model-based approaches followed by a novel validation framework to filter and sort the synthetic data into acceptable and unacceptable classes. Our 2-stage approach adapts to a wide range of data representations and does not require additional data beyond what the NLG models are trained on. It is also independent of the underlying NLG model architecture, and is able to generate more realistic samples close to the distribution of the NLG model-generated responses. We present results on 5 datasets (WebNLG, Cleaned E2E, ViGGO, Alarm, and Weather) with varying data representations. We compare our framework with existing techniques that involve synthetic data generation using simple sentence transformations and/or model-based techniques, and show that building acceptability classifiers using data that resembles the generation model outputs followed by a validation framework outperforms the existing techniques, achieving state-of-the-art results. We also show that our techniques can be used in few-shot settings using self-training.",
+}
+
+@inproceedings{chen-etal-2022,
+ author = {Chen, Shijie and Chen, Ziru and Deng, Xiang and Lewis, Ashley and Mo, Lingbo and Stevens, Samuel and Wang, Zhen and Yue, Xiang and Zhang, Tianshu and Su, Yu and Sun, Huan},
+ title = {Bootstrapping A User-Centered Task-Oriented Dialogue System},
+ year = {2022},
+ url = {https://www.amazon.science/alexa-prize/proceedings/bootstrapping-a-user-centered-task-oriented-dialogue-system},
+ booktitle = {Alexa Prize TaskBot Challenge Proceedings},
+}
+
+@inproceedings{chen-etal-2023-text,
+    title = "Text-to-{SQL} Error Correction with Language Models of Code",
+    author = "Chen, Ziru  and
+      Chen, Shijie  and
+      White, Michael  and
+      Mooney, Raymond  and
+      Payani, Ali  and
+      Srinivasa, Jayanth  and
+      Su, Yu  and
+      Sun, Huan",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-short.117",
+    doi = "10.18653/v1/2023.acl-short.117",
+    pages = "1359--1372",
+    abstract = "Despite recent progress in text-to-SQL parsing, current semantic parsers are still not accurate enough for practical use. In this paper, we investigate how to build automatic text-to-SQL error correction models. Noticing that token-level edits are out of context and sometimes ambiguous, we propose building clause-level edit models instead. Besides, while most language models of code are not specifically pre-trained for SQL, they know common data structures and their operations in programming languages such as Python. Thus, we propose a novel representation for SQL queries and their edits that adheres more closely to the pre-training corpora of language models of code. Our error correction model improves the exact set match accuracy of different parsers by 2.4-6.5 and obtains up to 4.3 point absolute improvement over two strong baselines.",
+}
+
+@inproceedings{clark-schuler-2023-categorial,
+    title = "Categorial grammar induction from raw data",
+    author = "Clark, Christian  and
+      Schuler, William",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.149",
+    doi = "10.18653/v1/2023.findings-acl.149",
+    pages = "2368--2379",
+    abstract = "Grammar induction, the task of learning a set of grammatical rules from raw or minimally labeled text data, can provide clues about what kinds of syntactic structures are learnable without prior knowledge. Recent work (e.g., Kim et al., 2019; Zhu et al., 2020; Jin et al., 2021a) has achieved advances in unsupervised induction of probabilistic context-free grammars (PCFGs). However, categorial grammar induction has received less recent attention, despite allowing inducers to support a larger set of syntactic categories{---}due to restrictions on how categories can combine{---}and providing a transparent interface with compositional semantics, opening up possibilities for models that jointly learn form and meaning. Motivated by this, we propose a new model for inducing a basic (Ajdukiewicz, 1935; Bar-Hillel, 1953) categorial grammar. In contrast to earlier categorial grammar induction systems (e.g., Bisk and Hockenmaier, 2012), our model learns from raw data without any part-of-speech information. Experiments on child-directed speech show that our model attains a recall-homogeneity of 0.33 on average, which dramatically increases to 0.59 when a bias toward forward function application is added to the model.",
+}
+
+@article{Clarke13:Frontiers,
+AUTHOR={Clarke, Alasdair Daniel Francis  and  Elsner, Micha  and  Rohde, Hannah},
+TITLE={Where's Wally: The influence of visual salience on referring expression generation},
+JOURNAL={Frontiers in Psychology},
+VOLUME={4},
+YEAR={2013},
+NUMBER={329},
+DOI={10.3389/fpsyg.2013.00329},
+URL={http://www.frontiersin.org/Journal/DownloadFile.ashx?pdf=1&FileId=54433&articleId=49717&Version=1&ContentTypeId=21&FileName=fpsyg-04-00329.pdf},
+ISSN={1664-1078},
+ABSTRACT={Referring expression generation (REG) presents the converse problem
+to visual search: Given a scene and a specified target, how does one generate a
+description which would allow somebody else to quickly and accurately locate
+the target?  Previous work in psycholinguistics and natural language processing
+that has addressed this question identifies only a limited role for vision in
+this task.  That previous work, which relies largely on simple scenes, tends to
+treat vision as a pre-process for extracting feature categories that are
+relevant to disambiguation.  However, the visual search literature suggests
+that some descriptions are better than others at enabling listeners to search
+efficiently within complex stimuli. This paper presents the results of a study
+testing whether speakers are sensitive to visual features that allow them to
+compose such `good' descriptions.  Our results show that visual properties
+(salience,  clutter, area, and distance) influence REG for targets embedded in
+images from the *Where's Wally?* books, which are an order of magnitude
+more complex than traditional stimuli.  Referring expressions for large salient
+targets are shorter than those for smaller and less salient targets, and
+targets within highly cluttered scenes are described using more words.
+We also find that speakers are more likely to mention non-target landmarks that
+are large, salient, and in close proximity to the target.  These findings
+identfy a key role for visual salience in language production decisions and
+highlight the importance of scene complexity for REG.}}
+
+@article{clarke2015giving,
+  title={Giving good directions: order of mention reflects visual salience},
+  author={Clarke, Alasdair D. F. and Elsner, Micha and Rohde, Hannah},
+  journal={Frontiers in psychology},
+  volume={6},
+  year={2015},
+  publisher={Frontiers Media SA},
+  url = {http://journal.frontiersin.org/article/10.3389/fpsyg.2015.01793/abstract}
+}
+
+@inproceedings{copot-etal-2022-word,
+    title = "A Word-and-Paradigm Workflow for Fieldwork Annotation",
+    author = "Copot, Maria  and
+      Court, Sara  and
+      Diewald, Noah  and
+      Antetomaso, Stephanie  and
+      Elsner, Micha",
+    booktitle = "Proceedings of the Fifth Workshop on the Use of Computational Methods in the Study of Endangered Languages",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.computel-1.20",
+    doi = "10.18653/v1/2022.computel-1.20",
+    pages = "159--169",
+}
+
+@inproceedings{court-etal-2023-analogy-maltese,
+    title = "Analogy in Contact: Modeling Maltese Plural Inflection",
+    author = "Court, Sara  and
+      Sims, Andrea D.  and
+      Elsner, Micha",
+    booktitle = "Proceedings of the Society for Computation in Linguistics ({SC}i{L})",
+    volume = {6},
+    number = {6},
+    month = june,
+    year = "2023",
+    address = "Amherst, MA, USA",
+    url = "https://scholarworks.umass.edu/scil/vol6/iss1/6",
+    doi = "https://doi.org/10.7275/y45e-k264",
+    pages = "35--46",
+}
+
+@inproceedings{das-etal-2020-sequence,
+    title = "Sequence-to-Set Semantic Tagging for Complex Query Reformulation and Automated Text Categorization in Biomedical {IR} using Self-Attention",
+    author = "Das, Manirupa  and
+      Li, Juanxi  and
+      Fosler-Lussier, Eric  and
+      Lin, Simon  and
+      Rust, Steve  and
+      Huang, Yungui  and
+      Ramnath, Rajiv",
+    booktitle = "Proceedings of the 19th SIGBioMed Workshop on Biomedical Language Processing",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.bionlp-1.2",
+    doi = "10.18653/v1/2020.bionlp-1.2",
+    pages = "14--27",
+    abstract = "Novel contexts, comprising a set of terms referring to one or more concepts, may often arise in complex querying scenarios such as in evidence-based medicine (EBM) involving biomedical literature. These may not explicitly refer to entities or canonical concept forms occurring in a fact-based knowledge source, e.g. the UMLS ontology. Moreover, hidden associations between related concepts meaningful in the current context, may not exist within a single document, but across documents in the collection. Predicting semantic concept tags of documents can therefore serve to associate documents related in unseen contexts, or categorize them, in information filtering or retrieval scenarios. Thus, inspired by the success of sequence-to-sequence neural models, we develop a novel sequence-to-set framework with attention, for learning document representations in a unique unsupervised setting, using no human-annotated document labels or external knowledge resources and only corpus-derived term statistics to drive the training, that can effect term transfer within a corpus for semantically tagging a large collection of documents. Our sequence-to-set modeling approach to predict semantic tags, gives to the best of our knowledge, the state-of-the-art for both, an unsupervised query expansion (QE) task for the TREC CDS 2016 challenge dataset when evaluated on an Okapi BM25{--}based document retrieval system; and also over the MLTM system baseline baseline (Soleimani and Miller, 2016), for both supervised and semi-supervised multi-label prediction tasks on the del.icio.us and Ohsumed datasets. We make our code and data publicly available.",
+}
+
+@article{deMarneffe-Manning-Potts:2012,
+ author = {de Marneffe, Marie-Catherine and Manning, Christopher D. and Potts, Christopher},
+ title = {Did it happen? the pragmatic complexity of veridicality assessment},
+ journal = {Computational Linguistics},
+ issue_date = {June 2012},
+ volume = {38},
+ number = {2},
+ month = jun,
+ year = {2012},
+ issn = {0891-2017},
+ pages = {301--333},
+ numpages = {33},
+ url = {http://dx.doi.org/10.1162/COLI_a_00097},
+ doi = {10.1162/COLI_a_00097},
+ acmid = {2330737},
+ publisher = {MIT Press},
+ address = {Cambridge, MA, USA},
+}
+
+@inproceedings{deMarneffePotts2017,
+author= {de Marneffe, Marie-Catherine and Potts, Christopher},
+editor={Ide, Nancy and Pustejovsky, James},
+title={Developing Linguistic Theories Using Annotated Corpora},
+booktitle={Handbook of Linguistic Annotation},
+year=2017,
+pages={411--438},
+doi={10.1007/978-94-024-0881-2_16},
+url={https://doi.org/10.1007/978-94-024-0881-2_16}
+}
+
+@article{deMarneffe-Grimm:2012,
+ author = {de Marneffe, Marie-Catherine and Grimm, Scott and Arnon, Inbal and Kirby, Susannah and Bresnan, Joan},
+ title = {A statistical model of grammatical choices in child production of datives sentences},
+ journal = {Language and Cognitive Processes},
+ volume = {27},
+ number = {1},
+ year = {2012},
+ pages = {25--61},
+ url = {http://dx.doi.org/10.1080/01690965.2010.542651}
+}
+
+@article{deMarneffe-Connor:2013,
+ author = {de Marneffe, Marie-Catherine and Connor, Miriam and Silveira, Natalia and Bowman, Samuel R. and Dozat, Timothy and Manning, Christopher D.},
+ title = {More constructions, more genres: Extending Stanford Dependencies},
+ journal = {DepLing 2013},
+ year = {2013},
+ url = {http://www.ling.ohio-state.edu/~mcdm/papers/depling.pdf}
+}
+
+@inproceedings{deMarneffe2014universal,
+  title={Universal Stanford Dependencies: A cross-linguistic typology},
+  author={de Marneffe, Marie-Catherine and Dozat, Timothy and Silveira, Natalia and Haverinen, Katri and Ginter, Filip and Nivre, Joakim and Manning, Christopher D},
+  booktitle={Proceedings of the 9th Conference on Language Resources and Evaluation (LREC)},
+  year={2014},
+  url={http://nlp.stanford.edu/pubs/USD_LREC14_paper_camera_ready.pdf}
+}
+
+@article{deMarneffe2015,
+author = {de Marneffe, Marie-Catherine and Recasens, Marta and Potts, Christopher},
+title = {Modeling the lifespan of discourse entities with application to coreference resolution},
+journal = {Journal of Artificial Intelligence},
+volume = {52},
+year = {2015},
+pages = {445-475}
+}
+
+@inproceedings{deMarneffe-Grioni-Kanerva-Ginter17,
+	author    = {de Marneffe, Marie-Catherine and Grioni, Matias and Kanerva, Jenna and Ginter, Filip},
+  title     = {Assessing the Annotation Consistency of the {U}niversal {D}ependencies Corpora},
+  booktitle = {Proceedings of the Fourth International Conference on Dependency Linguistics (Depling 2017)},
+  year      = {2017},
+	pages     = {108--115},
+  url       = {http://aclweb.org/anthology/W17-6514}
+}
+
+@inproceedings{Derczynski2013pos,
+    title = {Twitter Part-of-Speech Tagging for All: Overcoming Sparse and Noisy Data},
+    author = {Derczynski, Leon and Ritter, Alan and Clark, Sam and Bontcheva, Kalina},
+    year = {2013},
+    booktitle = {Proceedings of the International Conference on Recent Advances in Natural Language Processing},
+    publisher = {Association for Computational Linguistics},
+    url = {http://derczynski.com/sheffield/papers/twitter_pos.pdf},
+}
+
+@inproceedings{Duan13,
+author = {Duan, Manjuan and Elsner, Micha and de Marneffe, Marie-Catherine},
+title = {Visual and linguistic predictors for the definiteness of referring expressions},
+booktitle = {Proceedings of the 17th Workshop on the Semantics and Pragmatics of Dialogue (SemDial)},
+year = {2013},
+address = {Amsterdam},
+url = {http://www.illc.uva.nl/semdial/dialdam/papers/DuanEtal_dialdam.pdf}
+}
+
+@InProceedings{duan-white:acl14,
+  author = 	 {Manjuan Duan and Michael White},
+  title = 	 {That's Not What {I} Meant!  {U}sing Parsers to Avoid Structural Ambiguities in Generated Text},
+  booktitle = {Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics (ACL)},
+  year ={2014},
+  url = {http://www.aclweb.org/anthology/P14-1039.pdf}}
+
+@InProceedings{W16-1718,
+  author = 	"Duan, Manjuan
+		and Hill, Ethan
+		and White, Michael",
+  title = 	"Generating Disambiguating Paraphrases for Structurally Ambiguous Sentences",
+  booktitle = 	"Proceedings of the 10th Linguistic Annotation Workshop held in conjunction with ACL 2016 (LAW-X)",
+  year = 	"2016",
+  publisher = 	"Association for Computational Linguistics",
+  pages = 	"160--170",
+  location = 	"Berlin, Germany",
+  doi = 	"10.18653/v1/W16-1718",
+  url = 	"http://aclweb.org/anthology/W16-1718"
+}
+
+@inproceedings{elsner-court-2022-osu,
+    title = "{OSU} at {S}ig{M}orphon 2022: Analogical Inflection With Rule Features",
+    author = "Elsner, Micha  and
+      Court, Sara",
+    booktitle = "Proceedings of the 19th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology",
+    month = jul,
+    year = "2022",
+    address = "Seattle, Washington",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.sigmorphon-1.22",
+    doi = "10.18653/v1/2022.sigmorphon-1.22",
+    pages = "220--225",
+}
+
+@InProceedings{elsner-goldwater-eisenstein:2012:ACL2012,
+  author    = {Elsner, Micha  and  Goldwater, Sharon  and  Eisenstein, Jacob},
+  title     = {Bootstrapping a Unified Model of Lexical and Phonetic Acquisition},
+  booktitle = {Proceedings of the 50th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = {July},
+  year      = {2012},
+  address   = {Jeju Island, Korea},
+  publisher = {Association for Computational Linguistics},
+  pages     = {184--193},
+  url       = {http://www.aclweb.org/anthology/P12-1020},
+  slides={http://cllt.osu.edu/publications/melsner-acl12pres.pdf}
+}
+
+@InProceedings{elsner:2012:EACL2012,
+  author    = {Elsner, Micha},
+  title     = {Character-based kernels for novelistic plot structure},
+  booktitle = {Proceedings of the 13th Conference of the European Chapter of the Association for Computational Linguistics},
+  month     = {April},
+  year      = {2012},
+  address   = {Avignon, France},
+  publisher = {Association for Computational Linguistics},
+  pages     = {634--644},
+  url       = {http://www.aclweb.org/anthology/E12-1065},
+  slides={http://cllt.osu.edu/publications/melsner-eacl12pres.pdf}
+}
+
+@InProceedings{elsner-rohde-clarke:2014:EACL,
+  author    = {Elsner, Micha  and  Rohde, Hannah  and  Clarke, Alasdair D. F.},
+  title     = {Information Structure Prediction for Visual-world Referring Expressions},
+  booktitle = {Proceedings of the 14th Conference of the European Chapter of the Association for Computational Linguistics},
+  month     = {April},
+  year      = {2014},
+  address   = {Gothenburg, Sweden},
+  publisher = {Association for Computational Linguistics},
+  pages     = {520--529},
+  url       = {http://www.aclweb.org/anthology/E14-1055}
+}
+
+@article{elsner2015abstract,
+  title={Abstract Representations of Plot Struture},
+  author={Elsner, Micha},
+  journal={LiLT (Linguistic Issues in Language Technology)},
+  volume={12},
+  year={2015},
+  url = {http://csli-lilt.stanford.edu/ojs/index.php/LiLT/article/view/57/47}
+}
+
+@InProceedings{elsner-antetomaso-feldman:2016:P16-2,
+  author    = {Elsner, Micha  and  Antetomaso, Stephanie  and  Feldman, Naomi},
+  title     = {Joint Word Segmentation and Phonetic Category Induction},
+  booktitle = {Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)},
+  month     = {August},
+  year      = {2016},
+  address   = {Berlin, Germany},
+  publisher = {Association for Computational Linguistics},
+  pages     = {59--65},
+  url       = {http://anthology.aclweb.org/P16-2010}
+}
+
+@inproceedings{elsner-lane:2016,
+    author = {Elsner, Micha and Lane, Emily},
+    title = {Automatic discovery of {L}atin syntactic changes},
+    booktitle = {Proceedings of the 10th {SIGHUM} Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities (LATECH)},
+    month = {August},
+    year      = {2016},
+    address   = {Berlin, Germany},
+    publisher = {Association for Computational Linguistics},
+    url = {http://aclweb.org/anthology/W/W16/W16-2120.pdf}
+}
+
+@inproceedings{elsner-shain:2017,
+ author = {Elsner, Micha and Shain, Cory},
+ title = {Speech segmentation with a neural encoder model of working memory},
+ booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+ month= {September},
+ year = {2017},
+ address = {Copenhagen, Denmark},
+ publisher = {Association for Computational Linguistics},
+ url = {http://www.ling.ohio-state.edu/~elsner.14/pubs/nseg.pdf}
+}
+
+@inproceedings{elsner-ito:2017,
+ author = {Elsner, Micha and Ito, Kiwako},
+ title = {An Automatically Aligned Corpus of Child-directed Speech},
+ booktitle = {Proceedings of Interspeech},
+ month = {August},
+ year = {2017},
+ address = {Stockholm, Sweden},
+ url = {http://www.ling.ohio-state.edu/~elsner.14/pubs/interspeech.pdf}
+}
+
+
+@article{elsner-clarke-rohde:2018,
+author = {Elsner, Micha and Clarke, Alasdair and Rohde, Hannah},
+title = {Visual Complexity and Its Effects on Referring Expression Generation},
+journal = {Cognitive Science},
+volume = {42},
+number = {S4},
+pages = {940-973},
+keywords = {Referring expression generation, Psycholinguistics, Sentence processing, Visual search},
+doi = {10.1111/cogs.12507},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/cogs.12507},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/cogs.12507},
+abstract = {Abstract Speakers’ perception of a visual scene influences the language they use to describe it—which objects they choose to mention and how they characterize the relationships between them. We show that visual complexity can either delay or facilitate description generation, depending on how much disambiguating information is required and how useful the scene's complexity can be in providing, for example, helpful landmarks. To do so, we measure speech onset times, eye gaze, and utterance content in a reference production experiment in which the target object is either unique or non-unique in a visual scene of varying size and complexity. Speakers delay speech onset if the target object is non-unique and requires disambiguation, and we argue that this reflects the cost of deciding on a high-level strategy for describing it. The eye-tracking data demonstrate that these delays increase when speakers are able to conduct an extensive early visual search, implying that when speakers scan too little of the scene early on, they may decide to begin speaking before becoming aware that their description is underspecified. Speakers’ content choices reflect the visual makeup of the scene—the number of distractors present and the availability of useful landmarks. Our results highlight the complex role of visual perception in reference production, showing that speakers can make good use of complexity in ways that reflect their visual processing of the scene.},
+year = {2018}
+}
+
+@inproceedings{erdmann-etal-2019-practical,
+    title = "Practical, Efficient, and Customizable Active Learning for Named Entity Recognition in the Digital Humanities",
+    author = "Erdmann, Alexander  and
+      Wrisley, David Joseph  and
+      Allen, Benjamin  and
+      Brown, Christopher  and
+      Cohen-Bod{\'e}n{\`e}s, Sophie  and
+      Elsner, Micha  and
+      Feng, Yukun  and
+      Joseph, Brian  and
+      Joyeux-Prunel, B{\'e}atrice  and
+      de Marneffe, Marie-Catherine",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/N19-1231",
+    doi = "10.18653/v1/N19-1231",
+    pages = "2223--2234",
+    abstract = "Scholars in inter-disciplinary fields like the Digital Humanities are increasingly interested in semantic annotation of specialized corpora. Yet, under-resourced languages, imperfect or noisily structured data, and user-specific classification tasks make it difficult to meet their needs using off-the-shelf models. Manual annotation of large corpora from scratch, meanwhile, can be prohibitively expensive. Thus, we propose an active learning solution for named entity recognition, attempting to maximize a custom model{'}s improvement per additional unit of manual annotation. Our system robustly handles any domain or user-defined label set and requires no external resources, enabling quality named entity recognition for Humanities corpora where such resources are not available. Evaluating on typologically disparate languages and datasets, we reduce required annotation by 20-60{\%} and greatly outperform a competitive active learning baseline.",
+}
+
+@inproceedings{Erdmann2016ChallengesAS,
+  	author       = {Erdmann, Alex and Brown, Christopher and Joseph, Brian D. and Janse, Mark and Ajaka, Petra},
+	  booktitle    = {Proceedings of the Language Technology Resources and Tools for Digital Humanities Coling workshop},
+	  title        = {Challenges and Solutions for {L}atin Named Entity Recognition},
+	  year         = {2016},
+	  url = {https://www.clarin-d.de/images/lt4dh/pdf/LT4DH12.pdf}
+}
+
+@article{Fosler-Lussier:2013ai,
+	Author = {Fosler-Lussier, Eric and He, Yanzhang and Jyothi, Preethi and Prabhavalkar, Rohit},
+	Date-Added = {2013-09-10 13:29:32 +0000},
+	Date-Modified = {2013-09-10 13:29:32 +0000},
+	Journal = {Proceedings of the IEEE},
+	Number = {5},
+	Pages = {1054-1075},
+	Title = {Conditional Random Fields in Speech, Audio and Language Processing},
+	Volume = {101},
+	Year = {2013}}
+
+@inproceedings{Fosler-Lussier:2013ij,
+	Address = {Lyon, France},
+	Author = {Fosler-Lussier, Eric and Jyothi, Preethi and Keshet, Joseph and Livescu, Karen and Prabhavalkar, Rohit and Tang, Hao},
+	Booktitle = {Workshop on Speech Production in Automatic Speech Recognition},
+	Date-Added = {2013-09-10 13:29:32 +0000},
+	Date-Modified = {2013-09-10 13:29:32 +0000},
+	Pages = {2pp abstract},
+	Title = {Discriminative learning with latent articulatory variables},
+	Year = {2013}}
+
+@proceedings{:2012ve,
+	Address = {Montreal, Canada},
+	Date-Added = {2013-09-10 13:24:03 +0000},
+	Date-Modified = {2013-09-10 13:24:03 +0000},
+	Editor = {Fosler-Lussier, Eric and Riloff, Ellen and Bangalore, Srinivas},
+	Title = {Proceedings of the North American Association for Computational Linguistics Annual Meeting: Human Language Technologies Conference},
+	Year = {2012}}
+
+@inproceedings{fu-white-2018-lstm,
+    title = "{LSTM} Hypertagging",
+    author = "Fu, Reid  and
+      White, Michael",
+    booktitle = "Proceedings of the 11th International Conference on Natural Language Generation",
+    month = nov,
+    year = "2018",
+    address = "Tilburg University, The Netherlands",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/W18-6528",
+    doi = "10.18653/v1/W18-6528",
+    pages = "210--220",
+    abstract = "We implemented an LSTM hypertagger using techniques from Lewis et al. 2016, a recent paper on supertagging for parsing. We compared this new hypertagger with the existing hypertagger in OpenCCG, both in tagging accuracy and in effect on realization performance, and saw significant improvement in both. We did human evaluations to confirm that our findings were significant, and the human evaluations confirmed that they were.",
+}
+
+@article{Gales:2012lq,
+	Author = {Gales, Mark J.F. and Watanabe, Shinji and Fosler-Lussier, Eric},
+	Date-Added = {2013-09-10 13:24:03 +0000},
+	Date-Modified = {2013-09-10 13:24:03 +0000},
+	Journal = {Signal Processing Magazine},
+	Month = {Nov},
+	Number = {6},
+	Pages = {70-81},
+	Title = {Structured Discriminative Models for Speech Recognition},
+	Volume = {29},
+	Year = {2012}}
+
+@inproceedings{gokcen-etal-2018-madly,
+    title = "{Madly Ambiguous}: A Game for Learning about Structural Ambiguity and Why It{'}s Hard for Computers",
+    author = "Gokcen, Ajda  and
+      Hill, Ethan  and
+      White, Michael",
+    booktitle = "Proceedings of the 2018 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Demonstrations",
+    month = jun,
+    year = "2018",
+    address = "New Orleans, Louisiana",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/N18-5011",
+    doi = "10.18653/v1/N18-5011",
+    pages = "51--55",
+    abstract = "Madly Ambiguous is an open source, online game aimed at teaching audiences of all ages about structural ambiguity and why it{'}s hard for computers. After a brief introduction to structural ambiguity, users are challenged to complete a sentence in a way that tricks the computer into guessing an incorrect interpretation. Behind the scenes are two different NLP-based methods for classifying the user{'}s input, one representative of classic rule-based approaches to disambiguation and the other representative of recent neural network approaches. Qualitative feedback from the system{'}s use in online, classroom, and science museum settings indicates that it is engaging and successful in conveying the intended take home messages. A demo of Madly Ambiguous can be played at \url{http://madlyambiguous.osu.edu}.",
+}
+
+@InProceedings{GOKCEN16.679,
+  author = {Ajda Gokcen and Evan Jaffe and Johnsey Erdmann and Michael White and Douglas Danforth},
+  title = {A Corpus of Word-Aligned Asked and Anticipated Questions in a Virtual Patient Dialogue System},
+  booktitle = {Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016)},
+  year = {2016},
+  month = {May},
+  date = {23-28},
+  location = {Portorož, Slovenia},
+  publisher = {European Language Resources Association (ELRA)},
+  address = {Paris, France},
+  isbn = {978-2-9517408-9-1},
+  language = {English},
+  url = {http://www.lrec-conf.org/proceedings/lrec2016/pdf/679_Paper.pdf}
+ }
+  @Comment editor = {Nicoletta Calzolari (Conference Chair) and Khalid Choukri and Thierry Declerck and Sara Goggi and Marko Grobelnik and Bente Maegaard and Joseph Mariani and Helene Mazo and Asuncion Moreno and Jan Odijk and Stelios Piperidis},
+
+@inproceedings{gokcen-demarneffe2015,
+  title={I do not disagree: Leveraging monolingual alignment to detect disagreement in dialogue},
+  author={Gokcen, Ajda and de Marneffe, Marie-Catherine},
+  booktitle={Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (ACL 2015)},
+  year={2015},
+  url={http://www.aclweb.org/anthology/P15-2016}
+}
+
+@article{Griffis2016sbd,
+    title={A quantitative and qualitative evaluation of sentence boundary detection for the clinical domain},
+    author={Griffis, Denis R and Shivade, Chaitanya and Fosler-Lussier, Eric and Lai, Albert M},
+    journal={AMIA Summits on Translational Science Proceedings},
+    volume={2016},
+    year={2016},
+    publisher={American Medical Informatics Association},
+    url={http://web.cse.ohio-state.edu/~griffisd/papers/2016-AMIA-CRI.pdf}
+}
+
+@inproceedings{Hartmann:2012fj,
+	Author = {Hartmann, William and Fosler-Lussier, Eric},
+	Booktitle = {Proc. ICASSP},
+	Date-Added = {2012-03-24 20:59:13 +0000},
+	Date-Modified = {2012-03-24 20:59:42 +0000},
+	Title = {{ASR}-Driven Top-Down Binary Mask Estimation Using Spectral Priors},
+	Year = {2012}}
+
+@article{Hartmann:2013dp,
+	Author = {Hartmann, William and Narayanan, Arun and Fosler-Lussier, Eric and Wang, DeLiang},
+	Date-Added = {2013-09-10 13:29:32 +0000},
+	Date-Modified = {2013-09-10 13:29:32 +0000},
+	Journal = {IEEE Transactions on Acoustics, Speech, and Language Processing},
+	Month = {Oct},
+	Number = {10},
+	Pages = {1993-2005},
+	Title = {A Direct Masking Approach to Robust {ASR}},
+	Volume = {21},
+	Year = {2013}}
+
+@inproceedings{Hartmann:2012bh,
+	Author = {Hartmann, William and Fosler-Lussier, Eric},
+	Booktitle = {Interspeech},
+	Date-Added = {2013-09-10 13:24:03 +0000},
+	Date-Modified = {2013-09-10 13:24:03 +0000},
+	Pages = {4pp},
+	Title = {Improved Model Selection for the {ASR}-Driven Binary Mask},
+	Year = {2012}}
+
+@inproceedings{He:2012pd,
+	Author = {He, Yanzhang and Fosler-Lussier, Eric},
+	Booktitle = {Interspeech},
+	Date-Added = {2013-09-10 13:24:03 +0000},
+	Date-Modified = {2013-09-10 13:24:03 +0000},
+	Pages = {4pp},
+	Title = {Efficient Segmental Conditional Random Fields for One-Pass Phone Recognition},
+	Year = {2012}}
+
+@InProceedings{heidari-EtAl:2021:sigdial,
+  author    = {Heidari, Peyman  and  Einolghozati, Arash  and  Jain, Shashank  and  Batra, Soumya  and  Callender, Lee  and  Arun, Ankit  and  Mei, Shawn  and  Gupta, Sonal  and  Donmez, Pinar  and  Bhardwaj, Vikas  and  Kumar, Anuj  and  White, Michael},
+  title     = {Getting to Production with Few-shot Natural Language Generation Models},
+  booktitle      = {Proceedings of the 22nd Annual Meeting of the Special Interest Group on Discourse and Dialogue},
+  month          = {July},
+  year           = {2021},
+  address        = {Singapore and Online},
+  publisher      = {Association for Computational Linguistics},
+  pages     = {66--76},
+  abstract  = {In this paper, we study the utilization of pre-trained language models to enable few-shotNatural Language Generation (NLG) in task-oriented dialog systems. We introduce a system consisting of iterative self-training and an extensible mini-template framework that textualizes the structured input data into semi-natural text to fully take advantage of pre-trained language models. We compare var-ious representations of NLG modelsâ€™ input and output and show that transforming the input and output to be similar to what the language model has seen before during pre-training improves the modelâ€™s few-shot performance substantially. We show that neural mod-els can be trained with as few as 300 annotated examples while providing high fidelity, considerably lowering the resource requirements for standing up a new domain or language.This level of data efficiency removes the need for crowd-sourced data collection resulting in higher quality data annotated by expert linguists. In addition, model maintenance and debugging processes will improve in this few-shot setting. Finally, we explore distillation and using a caching system to satisfy latency requirements of real-world systems.},
+  url       = {https://aclanthology.org/2021.sigdial-1.8}
+}
+
+@inproceedings{hitczenko2018use,
+  title={How to use context to disambiguate overlapping categories: The test case of Japanese vowel length},
+  author={Hitczenko, K and Mazuka, R and Elsner, M and Feldman, NH},
+  booktitle={Proceedings of the Annual Conference of the Cognitive Science Society},
+  year={2018}
+}
+
+@article{hitczenko2019normalization,
+  title={Normalization may be ineffective for phonetic category learning},
+  author={Hitczenko, Kasia and Mazuka, Reiko and Elsner, Micha and Feldman, Naomi H},
+  journal={Proceedings of the Society for Computation in Linguistics},
+  volume={2},
+  number={1},
+  pages={369--370},
+  year={2019}
+}
+
+@InProceedings{howcroft-nakatsu-white:2013:ENLG,
+  author    = {Howcroft, David  and  Nakatsu, Crystal  and  White, Michael},
+  title     = {Enhancing the Expression of Contrast in the SPaRKy Restaurant Corpus},
+  booktitle = {Proceedings of the 14th European Workshop on Natural Language Generation (ENLG-13)},
+  month     = {August},
+  year      = {2013},
+  address   = {Sofia, Bulgaria},
+  publisher = {Association for Computational Linguistics},
+  pages     = {30--39},
+  url       = {http://www.aclweb.org/anthology/W13-2104}
+}
+
+@inproceedings{hussain-etal-2018-lexical,
+    title = "Lexical Networks in !{X}ung",
+    author = "Hussain, Syed-Amad  and
+      Elsner, Micha  and
+      Miller, Amanda",
+    booktitle = "Proceedings of the Fifteenth Workshop on Computational Research in Phonetics, Phonology, and Morphology",
+    month = oct,
+    year = "2018",
+    address = "Brussels, Belgium",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/W18-5802",
+    doi = "10.18653/v1/W18-5802",
+    pages = "11--20",
+    abstract = "We investigate the lexical network properties of the large phoneme inventory Southern African language Mangetti Dune !Xung as it compares to English and other commonly-studied languages. Lexical networks are graphs in which nodes (words) are linked to their minimal pairs; global properties of these networks are believed to mediate lexical access in the minds of speakers. We show that the network properties of !Xung are within the range found in previously-studied languages. By simulating data ({``}pseudolexicons{''}) with varying levels of phonotactic structure, we find that the lexical network properties of !Xung diverge from previously-studied languages when fewer phonotactic constraints are retained. We conclude that lexical network properties are representative of an underlying cognitive structure which is necessary for efficient word retrieval and that the phonotactics of !Xung may be shaped by a selective pressure which preserves network properties within this cognitively useful range.",
+}
+
+@inproceedings{Iosif:2012uq,
+	Address = {Istanbul, Turkey},
+	Author = {Iosif, Elias and Giannoudaki, Maria and Fosler-Lussier, Eric and Potamianos, Alex},
+	Booktitle = {Proceedings of the Eighth International Conference on Language Resources and Evaluation (LREC 2012)},
+	Date-Added = {2012-03-24 20:58:31 +0000},
+	Date-Modified = {2012-03-24 20:59:13 +0000},
+	Title = {Associative and Semantic Features Extracted From Web-Harvested Corpora},
+	Year = {2012}}
+
+@InProceedings{jaffe-jin-king-vanschijndel:2015:SEMEVAL,
+  author    = {Jaffe, Evan and Jin, Lifeng and King, David and {van Schijndel}, Marten},
+  title     = {Azmat: Sentence similarity using associative matrices},
+  booktitle = {Proceedings of Semeval 2015},
+  month     = {June},
+  year      = {2015},
+  address   = {Denver, Colorado, USA},
+  publisher = {Association for Computational Linguistics},
+  pages     = {159--163},
+  url       = {http://www.aclweb.org/anthology/S/S15/S15-2029.pdf}
+}
+
+@InProceedings{jaffe-EtAl:2015:bea,
+  author    = {Jaffe, Evan  and  White, Michael  and  Schuler, William  and  Fosler-Lussier, Eric  and  Rosenfeld, Alex  and  Danforth, Douglas},
+  title     = {Interpreting Questions with a Log-Linear Ranking Model in a Virtual Patient Dialogue System},
+  booktitle = {Proceedings of the Tenth Workshop on Innovative Use of NLP for Building Educational Applications},
+  month     = {June},
+  year      = {2015},
+  address   = {Denver, Colorado},
+  publisher = {Association for Computational Linguistics},
+  pages     = {86--96},
+  url       = {http://www.aclweb.org/anthology/W15-0611}
+}
+
+@inproceedings{jaffeetal21emnlp,
+ author = {Evan Jaffe and Byung-Doh Oh and William Schuler},
+ title = {Coreference-aware Surprisal Predicts Brain Response},
+ booktitle = {{Findings of the Association for Computational Linguistics: EMNLP 2021}},
+ year = {2021},
+ pages = {3351–3356},
+ url = {https://aclanthology.org/2021.findings-emnlp.285},
+ abstract = {Recent evidence supports a role for coreference processing in guiding human expectations about upcoming words during reading, based on covariation between reading times and word surprisal estimated by a coreference-aware semantic processing model (Jaffe et al. 2020). The present study reproduces and elaborates on this finding by (1) enabling the parser to process subword information that might better approximate human morphological knowledge, and (2) extending evaluation of coreference effects from self-paced reading to human brain imaging data. Results show that an expectation-based processing effect of coreference is still evident even in the presence of the stronger psycholinguistic baseline provided by the subword model, and that the coreference effect is observed in both self-paced reading and fMRI data, providing evidence of the effect's robustness.}
+}
+
+@inproceedings{jiang-de-marneffe-2019-know,
+    title = "Do You Know That Florence Is Packed with Visitors? Evaluating State-of-the-art Models of Speaker Commitment",
+    author = "Jiang, Nanjiang  and
+      de Marneffe, Marie-Catherine",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL)",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/P19-1412",
+    pages = "4208--4213",
+    abstract = "When a speaker, Mary, asks {``}Do you know that Florence is packed with visitors?{''}, we take her to believe that Florence is packed with visitors, but not if she asks {``}Do you think that Florence is packed with visitors?{''}. Inferring speaker commitment (aka event factuality) is crucial for information extraction and question answering. Here, we explore the hypothesis that linguistic deficits drive the error patterns of existing speaker commitment models by analyzing the linguistic correlates of model error on a challenging naturalistic dataset. We evaluate two state-of-the-art speaker commitment models on the CommitmentBank, an English dataset of naturally occurring discourses. The CommitmentBank is annotated with speaker commitment towards the content of the complement ({``}Florence is packed with visitors{''} in our example) of clause-embedding verbs ({``}know{''}, {``}think{''}) under four entailment-canceling environments (negation, modal, question, conditional). A breakdown of items by linguistic features reveals asymmetrical error patterns: while the models achieve good performance on some classes (e.g., negation), they fail to generalize to the diverse linguistic constructions (e.g., conditionals) in natural language, highlighting directions for improvement.",
+}
+
+@InProceedings{jin-mcdm:2015:EMNLP,
+  author    = {Jin, Lifeng  and   de Marneffe, Marie-Catherine},
+  title     = {The Overall Markedness of Discourse Relations},
+  booktitle = {Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing},
+  month     = {September},
+  year      = {2015},
+  address   = {Lisbon, Portugal},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1114--1119},
+  url       = {http://aclweb.org/anthology/D15-1132}
+}
+
+@InProceedings{jin-et-al:2018:BEA,
+  author =  "Jin, Lifeng
+    and King, David
+    and Hussein, Amad
+    and White, Michael
+    and Danforth, Douglas",
+  title =   "Using Paraphrasing and Memory-Augmented Models to Combat Data Sparsity in      Question Interpretation with a Virtual Patient Dialogue System    ",
+  booktitle =   "Proceedings of the Thirteenth Workshop on Innovative Use of NLP for      Building Educational Applications    ",
+  year =  "2018",
+  publisher =   "Association for Computational Linguistics",
+  pages =   "13--23",
+  location =  "New Orleans, Louisiana",
+  doi =   "10.18653/v1/W18-0502",
+  url =   "http://aclweb.org/anthology/W18-0502"
+}
+
+
+@Article{jin-et-al:2018:TACL,
+  author =  "Jin, Lifeng
+    and Doshi-Velez, Finale
+    and Miller, Timothy
+    and Schuler, William
+    and Schwartz, Lane",
+  title =   "Unsupervised Grammar Induction with Depth-bounded PCFG",
+  journal =   "Transactions of the Association for Computational Linguistics",
+  year =  "2018",
+  volume =  "6",
+  pages =   "211--224",
+  url =   "http://aclweb.org/anthology/Q18-1016"
+}
+
+
+@InProceedings{jin-et-al:2018:EMNLP,
+  author =  "Jin, Lifeng
+    and Doshi-Velez, Finale
+    and Miller, Timothy
+    and Schuler, William
+    and Schwartz, Lane",
+  title =   "Depth-bounding is effective: Improvements and evaluation of unsupervised PCFG induction",
+  booktitle =   "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+  year =  "2018",
+  publisher =   "Association for Computational Linguistics",
+  pages =   "2721--2731",
+  location =  "Brussels, Belgium",
+  url =   "http://aclweb.org/anthology/D18-1292"
+}
+
+@InProceedings{jin-schuler:2015:NAACL-HLT,
+  author    = {Jin, Lifeng  and  Schuler, William},
+  title     = {A Comparison of Word Similarity Performance Using Explanatory and Non-explanatory Texts},
+  booktitle = {Proceedings of the 2015 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  month     = {May--June},
+  year      = {2015},
+  address   = {Denver, Colorado},
+  publisher = {Association for Computational Linguistics},
+  pages     = {990--994},
+  url       = {http://www.aclweb.org/anthology/N15-1101}
+}
+
+@InProceedings{jin-et-al:bea17,
+  author = 	 {Lifeng Jin and Michael White and Evan Jaffe and Laura Zimmerman and Douglas Danforth},
+  title = 	 {Combining {CNNs} and Pattern Matching for Question
+                  Interpretation in a Virtual Patient Dialogue System},
+  url = {http://www.ling.ohio-state.edu/~white.1240/papers/Jin-et-al-bea12-to-appear.pdf},
+  booktitle = {Proceedings of the 12th Workshop on Innovative Use of NLP for Building Educational Applications at EMNLP 2017},
+  year = 	 2017,
+  note = 	 {To appear}}
+
+@inproceedings{jinetal21emnlp,
+ author = {Lifeng Jin and Byung-Doh Oh and William Schuler},
+ title = {Character-based {PCFG} Induction for Modeling the Syntactic Acquisition of Morphologically Rich Languages},
+ booktitle = {{Findings of the Association for Computational Linguistics: EMNLP 2021}},
+ year = {2021},
+ pages = {4367–4378},
+ url = {https://aclanthology.org/2021.findings-emnlp.371},
+ abstract = {Unsupervised PCFG induction models, which build syntactic structures from raw text, can be used to evaluate the extent to which syntactic knowledge can be acquired from distributional information alone. However, many state-of-the-art PCFG induction models are word-based, meaning that they cannot directly inspect functional affixes, which may provide crucial information for syntactic acquisition in child learners. This work first introduces a neural PCFG induction model that allows a clean ablation of the influence of subword information in grammar induction. Experiments on child-directed speech demonstrate first that the incorporation of subword information results in more accurate grammars with categories that word-based induction models have difficulty finding, and second that this effect is amplified in morphologically richer languages that rely on functional affixes to express grammatical relations. A subsequent evaluation on multilingual treebanks shows that the model with subword information achieves state-of-the-art results on many languages, further supporting a distributional model of syntactic acquisition.}
+}
+
+@inproceedings{Jyothi:2012yq,
+	Author = {Jyothi, Preethi and L. Johnson and C. Chelba and B. Strope},
+	Booktitle = {Proc. ICASSP},
+	Date-Added = {2012-03-24 21:02:17 +0000},
+	Date-Modified = {2012-03-24 21:02:59 +0000},
+	Title = {Distributed Discriminative Language Models for Google Voice-Search},
+	Year = {2012}}
+
+@inproceedings{Jyothi:2012qf,
+	Author = {Jyothi, Preethi and Fosler-Lussier, Eric and Livescu, Karen},
+	Booktitle = {Interspeech},
+	Date-Added = {2013-09-10 13:24:03 +0000},
+	Date-Modified = {2013-09-10 13:24:03 +0000},
+	Pages = {4pp},
+	Title = {Discriminatively learning factorized finite state pronunciation models from dynamic Bayesian networks},
+	Year = {2012}}
+
+@inproceedings{Jyothi:2013sp,
+	Author = {Jyothi, Preethi and Fosler-Lussier, Eric and Livescu, Karen},
+	Booktitle = {Proceedings of Interspeech},
+	Date-Added = {2013-09-10 13:29:32 +0000},
+	Date-Modified = {2013-09-10 13:29:32 +0000},
+	Pages = {5pp},
+	Title = {Discriminative Training of {WFST} Factors with Application to Pronunciation Modeling},
+	Year = {2013}}
+
+@inproceedings{kamper2015unsupervised,
+  title={Unsupervised neural network based feature extraction using weak top-down constraints},
+  author={Kamper, Herman and Elsner, Micha and Jansen, Aren and Goldwater, Sharon},
+  booktitle={ICASSP},
+  year={2015},
+  url = {http://www.research.ed.ac.uk/portal/files/18703089/Kamper_Elsner_ET_AL_2015_Unsupervised_Neural_Network_Based_Feature_Extraction_Using_Weak_Top_Down_Constraints.pdf}
+}
+
+
+@inproceedings{Khuc2012,
+address = {New York, New York, USA},
+author = {Khuc, Vinh Ngoc and Shivade, Chaitanya and Ramnath, Rajiv and Ramanathan, Jay},
+booktitle = {Proceedings of the 27th Annual ACM Symposium on Applied Computing - SAC '12},
+doi = {10.1145/2245276.2245364},
+isbn = {9781450308571},
+month = mar,
+pages = {459},
+publisher = {ACM Press},
+title = {{Towards building large-scale distributed systems for twitter sentiment analysis}},
+url = {http://dl.acm.org/citation.cfm?id=2245276.2245364},
+year = {2012}
+}
+
+@InProceedings{kim-demarneffe:2013:EMNLP,
+  author    = {Kim, Joo-Kyung  and  de Marneffe, Marie-Catherine},
+  title     = {Deriving Adjectival Scales from Continuous Space Word Representations},
+  booktitle = {Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing},
+  month     = {October},
+  year      = {2013},
+  address   = {Seattle, Washington, USA},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1625--1630},
+  url       = {http://www.aclweb.org/anthology/D13-1169}
+}
+
+@InProceedings{kim-demarneffe-foslerlussier:2015:VSM-NLP,
+  author    = {Kim, Joo-Kyung  and  de Marneffe, Marie-Catherine  and  Fosler-Lussier, Eric},
+  title     = {Neural word embeddings with multiplicative feature interactions for tensor-based compositions},
+  booktitle = {Proceedings of the 1st Workshop on Vector Space Modeling for Natural Language Processing},
+  month     = {June},
+  year      = {2015},
+  address   = {Denver, Colorado},
+  publisher = {Association for Computational Linguistics},
+  pages     = {143--150},
+  url       = {http://www.aclweb.org/anthology/W15-1520}
+}
+
+@InProceedings{kim-demarneffe-foslerlussier:2016:REPL4NLP,
+  author    = {Kim, Joo-Kyung  and  de Marneffe, Marie-Catherine  and  Fosler-Lussier, Eric},
+  title     = {Adjusting Word Embeddings with Semantic Intensity Orders},
+  booktitle = {Proceedings of the Workshop on Representation Learning for NLP},
+  month     = {August},
+  year      = {2016},
+  address   = {Berlin, Germany},
+  publisher = {Association for Computational Linguistics},
+  pages     = {62--69},
+  url       = {http://www.aclweb.org/anthology/W16-1607}
+}
+
+@InProceedings{kim-tur-celikyilmaz-cao-wang:2016:SLT,
+  author	= {Kim, Joo-Kyung  and  Tur, Gokhan  and  Celikyilmaz, Asli  and  Cao, Bin  and  Wang, Ye-Yi},
+  title		= {Intent Detection using Semantically Enriched Word Embeddings},
+  booktitle	= {IEEE Workshop on Spoken Language Technology},
+  month		= {December},
+  year		= {2016},
+  publisher	= {IEEE},
+  url		= {http://web.cse.ohio-state.edu/~kimjook/slt_kim.pdf}
+}
+
+@inproceedings{kim-et-al:2017,
+ author = {Kim, Joo-Kyung and Kim, Young-Bum and Sarikaya, Ruhi and Fosler-Lussier, Eric},
+ title = {Cross-Lingual Transfer Learning for POS Tagging without Cross-Lingual Resources},
+ booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+ month= {September},
+ year = {2017},
+ pages = {2822–2828},
+ address = {Copenhagen, Denmark},
+ publisher = {Association for Computational Linguistics},
+ url = {http://aclweb.org/anthology/D17-1301}
+}
+
+@inproceedings{king-white-2018-osu,
+    title = "The {OSU} Realizer for {SRST} {`}18: Neural Sequence-to-Sequence Inflection and Incremental Locality-Based Linearization",
+    author = "King, David  and
+      White, Michael",
+    booktitle = "Proceedings of the First Workshop on Multilingual Surface Realisation",
+    month = jul,
+    year = "2018",
+    address = "Melbourne, Australia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/W18-3605",
+    doi = "10.18653/v1/W18-3605",
+    pages = "39--48",
+    abstract = "Surface realization is a nontrivial task as it involves taking structured data and producing grammatically and semantically correct utterances. Many competing grammar-based and statistical models for realization still struggle with relatively simple sentences. For our submission to the 2018 Surface Realization Shared Task, we tackle the shallow task by first generating inflected wordforms with a neural sequence-to-sequence model before incrementally linearizing them. For linearization, we use a global linear model trained using early update that makes use of features that take into account the dependency structure and dependency locality. Using this pipeline sufficed to produce surprisingly strong results in the shared task. In future work, we intend to pursue joint approaches to linearization and morphological inflection and incorporating a neural language model into the linearization choices.",
+}
+
+@InProceedings{king-white:inlg16,
+  author = 	 {David L. King and Michael White},
+  title = 	 {Enhancing {PTB Universal Dependencies} for Grammar-Based Surface Realization},
+  booktitle = {Proceedings of the Ninth International Natural Language Generation Conference (INLG)},
+  year = 	 {2016},
+  url = {http://www.macs.hw.ac.uk/InteractionLab/INLG2016/proceedings/pdf/INLG38.pdf}
+}
+
+@InProceedings{king:2016:SIGMORPHON,
+  author    = {King, David},
+  title     = {Evaluating Sequence Alignment for Learning Inflectional Morphology},
+  booktitle = {Proceedings of the 14th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology},
+  month     = {August},
+  year      = {2016},
+  address   = {Berlin, Germany},
+  publisher = {Association for Computational Linguistics},
+  pages     = {49--53},
+  url       = {http://anthology.aclweb.org/W16-2008}
+}
+
+@inproceedings{kulkarni-etal-2021-learning,
+    title = "Learning Latent Structures for Cross Action Phrase Relations in Wet Lab Protocols",
+    author = "Kulkarni, Chaitanya  and
+      Chan, Jany  and
+      Fosler-Lussier, Eric  and
+      Machiraju, Raghu",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-long.525",
+    doi = "10.18653/v1/2021.acl-long.525",
+    pages = "6737--6750",
+    abstract = "Wet laboratory protocols (WLPs) are critical for conveying reproducible procedures in biological research. They are composed of instructions written in natural language describing the step-wise processing of materials by specific actions. This process flow description for reagents and materials synthesis in WLPs can be captured by material state transfer graphs (MSTGs), which encode global temporal and causal relationships between actions. Here, we propose methods to automatically generate a MSTG for a given protocol by extracting all action relationships across multiple sentences. We also note that previous corpora and methods focused primarily on local intra-sentence relationships between actions and entities and did not address two critical issues: (i) resolution of implicit arguments and (ii) establishing long-range dependencies across sentences. We propose a new model that incrementally learns latent structures and is better suited to resolving inter-sentence relations and implicit arguments. This model draws upon a new corpus WLP-MSTG which was created by extending annotations in the WLP corpora for inter-sentence relations and implicit arguments. Our model achieves an F1 score of 54.53{\%} for temporal and causal relations in protocols from our corpus, which is a significant improvement over previous models - DyGIE++:28.17{\%}; spERT:27.81{\%}. We make our annotated WLP-MSTG corpus available to the research community.",
+}
+
+@inproceedings{lan2018toolkit,
+  author     = {Lan, Wuwei and Xu, Wei},
+  title      = {Neural Network Models for Paraphrase Identification, Semantic Textual Similarity, Natural Language Inference, and Question Answering},
+  booktitle  = {Proceedings of the 27th International Conference on Computational Linguistics (COLING)},
+  year       = {2018},
+  url = "https://arxiv.org/pdf/1806.04330.pdf"
+}
+
+@inproceedings{lan2018subword,
+  author     = {Lan, Wuwei and Xu, Wei},
+  title      = {Character-based Neural Networks for Sentence Pair Modeling},
+  booktitle = {Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL)},
+  year       = {2018}
+}
+
+@InProceedings{lan-EtAl:2017:EMNLP20171,
+  author    = {Lan, Wuwei  and  Qiu, Siyu  and  He, Hua  and  Xu, Wei},
+  title     = {A Continuously Growing Dataset of Sentential Paraphrases},
+  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+  month     = {September},
+  year      = {2017},
+  address   = {Copenhagen, Denmark},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1235--1245},
+  url       = {https://www.aclweb.org/anthology/D17-1127}
+}
+
+
+@inproceedings{li2014profile,
+  author    = {Li, Jiwei Li and Ritter, Alan and Hovy, Eduard H.},
+  title     = {Weakly Supervised User Profile Extraction from Twitter},
+  booktitle = {Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics},
+  year      = {2014},
+  url       = {http://aclweb.org/anthology/P/P14/P14-1016.pdf},
+}
+
+@inproceedings{li2014congradulations,
+  author    = {Li, Jiwei Li and Ritter, Alan and Cardie, Claire  and Hovy, Eduard H.},
+  title     = {Major Life Event Extraction from Twitter based on Congratulations/Condolences Speech Acts},
+  booktitle = {EMNLP},
+  year      = {2014},
+  url       = {http://aritter.github.io/life_event.pdf},
+}
+
+@inproceedings{li-etal-2020-leveraging,
+    title = "Leveraging Large Pretrained Models for {W}eb{NLG} 2020",
+    author = "Li, Xintong  and
+      Maskharashvili, Aleksandre  and
+      Jory Stevens-Guille, Symon  and
+      White, Michael",
+    booktitle = "Proceedings of the 3rd International Workshop on Natural Language Generation from the Semantic Web (WebNLG+)",
+    month = "12",
+    year = "2020",
+    address = "Dublin, Ireland (Virtual)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.webnlg-1.12",
+    pages = "117--124",
+    abstract = "In this paper, we report experiments on finetuning large pretrained models to realize resource description framework (RDF) triples to natural language. We provide the details of how to build one of the top-ranked English generation models in WebNLG Challenge 2020. We also show that there appears to be considerable potential for reranking to improve the current state of the art both in terms of statistical metrics and model-based metrics. Our human analyses of the generated texts show that for Russian, pretrained models showed some success, both in terms of lexical and morpho-syntactic choices for generation, as well as for content aggregation. Nevertheless, in a number of cases, the model can be unpredictable, both in terms of failure or success. Omissions of the content and hallucinations, which in many cases occurred at the same time, were major problems. By contrast, the models for English showed near perfect performance on the validation set.",
+}
+
+@inproceedings{li-etal-2021-self,
+    title = "Self-Training for Compositional Neural {NLG} in Task-Oriented Dialogue",
+    author = "Li, Xintong  and
+      Stevens-Guille, Symon  and
+      Maskharashvili, Aleksandre  and
+      White, Michael",
+    booktitle = "Proceedings of the 14th International Conference on Natural Language Generation",
+    month = aug,
+    year = "2021",
+    address = "Aberdeen, Scotland, UK",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.inlg-1.10",
+    pages = "87--102",
+    abstract = "Neural approaches to natural language generation in task-oriented dialogue have typically required large amounts of annotated training data to achieve satisfactory performance, especially when generating from compositional inputs. To address this issue, we show that self-training enhanced with constrained decoding yields large gains in data efficiency on a conversational weather dataset that employs compositional meaning representations. In particular, our experiments indicate that self-training with constrained decoding can enable sequence-to-sequence models to achieve satisfactory quality using vanilla decoding with five to ten times less data than with ordinary supervised baseline; moreover, by leveraging pretrained models, data efficiency can be increased further to fifty times. We confirm the main automatic results with human evaluations and show that they extend to an enhanced, compositional version of the E2E dataset. The end result is an approach that makes it possible to achieve acceptable performance on compositional NLG tasks using hundreds rather than tens of thousands of training samples.",
+}
+
+@article{Livescu:2012rr,
+	Author = {Livescu, Karen and Fosler-Lussier, Eric and Metze, Florian},
+	Booktitle = {Signal Processing Magazine},
+	Date-Added = {2013-09-10 13:24:03 +0000},
+	Date-Modified = {2013-09-10 13:24:03 +0000},
+	Journal = {Signal Processing Magazine},
+	Month = {Nov},
+	Number = {6},
+	Pages = {44-57},
+	Title = {Sub-word Modeling for Automatic Speech Recognition},
+	Volume = {29},
+	Year = {2012}}
+
+@inproceedings{Ma:2012ly,
+	Author = {Ma, Yi and Singh, Ritu and Fosler-Lussier, Eric and Lofthus, Robert},
+	Booktitle = {NAACL HLT Workshop on Predicting and Improving Text Readability for Target Reader Populations},
+	Date-Added = {2013-09-10 13:24:03 +0000},
+	Date-Modified = {2013-09-10 13:24:03 +0000},
+	Pages = {58--64},
+	Title = {Comparing human versus automatic feature extraction for fine-grained elementary readability assessment},
+	Year = {2012}}
+
+@inproceedings{Ma:2012qy,
+	Author = {Ma, Yi and Fosler-Lussier, Eric and Lofthus, Robert},
+	Booktitle = {North American Association for Computational Linguistics Annual Meeting - Human Language Technologies Conference (NAACL HLT 2012), Short Paper Track},
+	Date-Added = {2012-03-24 20:58:02 +0000},
+	Date-Modified = {2012-03-24 20:58:31 +0000},
+	Title = {Ranking-based readability assessment for early primary children's literature},
+	Year = {2012}}
+
+@InProceedings{EMNLP-2018-Maddela,
+  author = 	{Maddela, Mounica and Xu, Wei and Preoţiuc-Pietro, Daniel},
+  title = 	{Multi-task Pairwise Neural Ranking for Hashtag Segmentation},
+  booktitle = 	{Proceedings of the Association for Computational Linguistics (ACL)},
+  year = 	{2019},
+  url  = {https://arxiv.org/abs/1810.05754}
+}
+
+@InProceedings{ACL-2019-Maddela,
+  author = 	{Maddela, Mounica and Xu, Wei},
+  title = 	{A Word-Complexity Lexicon and A Neural Readability Ranking Model for Lexical Simplification},
+  booktitle = 	{Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year = 	{2018},
+  url  = {https://www.aclweb.org/anthology/P19-1242}
+}
+
+@InProceedings{mahler-EtAl:2017:BLGNLP2017,
+  author    = {Mahler, Taylor  and  Cheung, Willy  and  Elsner, Micha  and  King, David  and  de Marneffe, Marie-Catherine  and  Shain, Cory  and  Stevens-Guille, Symon  and  White, Michael},
+  title     = {Breaking NLP: Using Morphosyntax, Semantics, Pragmatics and World Knowledge to Fool Sentiment Analysis Systems},
+  booktitle = {Proceedings of the First Workshop on Building Linguistically Generalizable NLP Systems},
+  month     = {September},
+  year      = {2017},
+  address   = {Copenhagen, Denmark},
+  publisher = {Association for Computational Linguistics},
+  pages     = {33--39},
+  abstract  = {This paper describes our â€œbreakerâ€ submission to the 2017 EMNLP â€œBuild It
+	Break Itâ€ shared task on sentiment analysis. In order to cause the
+	â€œbuilderâ€ systems to make incorrect predictions, we edited items in the
+	blind test data according to linguistically interpretable strategies that allow
+	us to assess the ease with which the builder systems learn various components
+	of linguistic structure. On the whole, our submitted pairs break all systems at
+	a high rate (72.6%), indicating that sentiment analysis as an NLP task may
+	still have a lot of ground to cover. Of the breaker strategies that we
+	consider, we find our semantic and pragmatic manipulations to pose the most
+	substantial difficulties for the builder systems.},
+  url       = {http://www.aclweb.org/anthology/W17-5405}
+}
+
+@article{doi:10.1080/0142159X.2019.1616683,
+author = {Kellen R. Maicher and Laura Zimmerman and Bruce Wilcox and Beth Liston and Holly Cronau and Allison Macerollo and Lifeng Jin and Evan Jaffe and Michael White and Eric Fosler-Lussier and William Schuler and David P. Way and Douglas R. Danforth},
+title = {Using virtual standardized patients to accurately assess information gathering skills in medical students},
+journal = {Medical Teacher},
+volume = {0},
+number = {0},
+pages = {1-7},
+year  = {2019},
+publisher = {Taylor & Francis},
+doi = {10.1080/0142159X.2019.1616683},
+note ={PMID: 31230496},
+URL = {https://doi.org/10.1080/0142159X.2019.1616683},
+abstract = { Introduction: Practicing a medical history using standardized patients is an essential component of medical school curricula. Recent advances in technology now allow for newer approaches for practicing and assessing communication skills. We describe herein a virtual standardized patient (VSP) system that allows students to practice their history taking skills and receive immediate feedback. Methods: Our VSPs consist of artificially intelligent, emotionally responsive 3D characters which communicate with students using natural language. The system categorizes the input questions according to specific domains and summarizes the encounter. Automated assessment by the computer was compared to manual assessment by trained raters to assess accuracy of the grading system. Results: Twenty dialogs chosen randomly from 102 total  encounters were analyzed by three human and one computer rater. Overall scores calculated by the computer were not different than those provided by the human raters, and overall accuracy of the computer system was 87\%, compared with 90\% for human raters. Inter-rater reliability was high across 19 of 21 categories. Conclusions: We have developed a virtual standardized patient system that can understand, respond, categorize, and assess student performance in gathering information during a typical medical history, thus enabling students to practice their history-taking skills and receive immediate feedback. }
+}
+
+@article{Maicher_et_al_2022, 
+title={Artificial Intelligence in Virtual Standardized Patients: Combining Natural Language Understanding and Rule Based Dialogue Management to Improve Conversational Fidelity}, 
+url={https://doi.org/10.1080/0142159X.2022.2130216}, 
+note={To appear}, 
+journal={Medical Teacher}, 
+author={Maicher, K. and Stiff, A. and Scholl, M. and White, M. and Fosler-Lussier, E. and Schuler, W. and Serai, P. and Sunder, V. and Forrestal, H. and Mendella, L. and Adib, M. and Bratton, C. and Lee, K. and Danforth, D. R.}, 
+year={2022} }
+
+@inproceedings{maneriker-etal-2021-sysml,
+    title = "{SYSML}: {S}t{Y}lometry with {S}tructure and {M}ultitask {L}earning: {I}mplications for {D}arknet Forum Migrant Analysis",
+    author = "Maneriker, Pranav  and
+      He, Yuntian  and
+      Parthasarathy, Srinivasan",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.548",
+    pages = "6844--6857",
+    abstract = "Darknet market forums are frequently used to exchange illegal goods and services between parties who use encryption to conceal their identities. The Tor network is used to host these markets, which guarantees additional anonymization from IP and location tracking, making it challenging to link across malicious users using multiple accounts (sybils). Additionally, users migrate to new forums when one is closed further increasing the difficulty of linking users across multiple forums. We develop a novel stylometry-based multitask learning approach for natural language and model interactions using graph embeddings to construct low-dimensional representations of short episodes of user activity for authorship attribution. We provide a comprehensive evaluation of our methods across four different darknet forums demonstrating its efficacy over the state-of-the-art, with a lift of up to 2.5X on Mean Retrieval Rank and 2X on Recall@10.",
+}
+
+
+@inproceedings{maskharashvili-etal-2021-neural,
+    title = "Neural Methodius Revisited: Do Discourse Relations Help with Pre-Trained Models Too?",
+    author = "Maskharashvili, Aleksandre  and
+      Stevens-Guille, Symon  and
+      Li, Xintong  and
+      White, Michael",
+    booktitle = "Proceedings of the 14th International Conference on Natural Language Generation",
+    month = aug,
+    year = "2021",
+    address = "Aberdeen, Scotland, UK",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.inlg-1.2",
+    pages = "12--23",
+    abstract = "Recent developments in natural language generation (NLG) have bolstered arguments in favor of re-introducing explicit coding of discourse relations in the input to neural models. In the Methodius corpus, a meaning representation (MR) is hierarchically structured and includes discourse relations. Meanwhile pre-trained language models have been shown to implicitly encode rich linguistic knowledge which provides an excellent resource for NLG. By virtue of synthesizing these lines of research, we conduct extensive experiments on the benefits of using pre-trained models and discourse relation information in MRs, focusing on the improvement of discourse coherence and correctness. We redesign the Methodius corpus; we also construct another Methodius corpus in which MRs are not hierarchically structured but flat. We report experiments on different versions of the corpora, which probe when, where, and how pre-trained models benefit from MRs with discourse relation information in them. We conclude that discourse relations significantly improve NLG when data is limited.",
+}
+
+@InProceedings{Mehay-White:2012:MONOMT,
+  author    = {Mehay, Dennis N. and  White, Michael},
+  title     = {Shallow and Deep Paraphrasing for Improved Machine Translation Parameter Optimization},
+  booktitle = {Proceedings of the AMTA 2012 Workshop on Monolingual Machine Translation (MONOMT 2012)},
+  year      = {2012},
+  pages     = {27--30},
+  url       = {http://mt-archive.info/AMTA-2012-Mehay.pdf}
+}
+
+@inproceedings{Metze:2012ul,
+	Author = {Metze, Florian and Fosler-Lussier, Eric},
+	Booktitle = {Interspeech (Demo Session)},
+	Date-Added = {2013-09-10 13:24:03 +0000},
+	Date-Modified = {2013-09-10 13:24:03 +0000},
+	Pages = {2pp},
+	Title = {The Speech Recognition Virtual Kitchen: An Initial Prototype},
+	Year = {2012}}
+
+@inproceedings{Metze:2013hc,
+	Author = {Metze, Florian and Fosler-Lussier, Eric and Bates, Rebecca},
+	Booktitle = {Proceedings of Interspeech (Show and Tell Session)},
+	Date-Added = {2013-09-10 13:29:32 +0000},
+	Date-Modified = {2013-09-10 13:29:32 +0000},
+	Pages = {3pp},
+	Title = {The Speech Recognition Virtual Kitchen},
+	Year = {2013}}
+
+@inproceedings{miller-elsner:2017,
+ author = {Miller, Amanda and Elsner, Micha},
+ title = {Click reduction in fluent speech: a semi-automated analysis of Mangetti Dune !Xung},
+ booktitle = {Second Workshop on Computational Methods for Endangered Languages (Compute-EL 2)},
+ year = {2017},
+ month = {March},
+ address = {Honolulu, Hawai'i},
+ url = {http://www.aclweb.org/anthology/W/W17/W17-01.pdf#page=119}
+}
+
+@misc{mo2021transparent,
+      title={Towards Transparent Interactive Semantic Parsing via Step-by-Step Correction}, 
+      author={Lingbo Mo and Ashley Lewis and Huan Sun and Michael White},
+      year={2021},
+      eprint={2110.08345},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2110.08345}
+}
+
+@inproceedings{mo-etal-2022-towards,
+    title = "Towards Transparent Interactive Semantic Parsing via Step-by-Step Correction",
+    author = "Mo, Lingbo  and
+      Lewis, Ashley  and
+      Sun, Huan  and
+      White, Michael",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2022",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-acl.28",
+    doi = "10.18653/v1/2022.findings-acl.28",
+    pages = "322--342",
+    abstract = "Existing studies on semantic parsing focus on mapping a natural-language utterance to a logical form (LF) in one turn. However, because natural language may contain ambiguity and variability, this is a difficult challenge. In this work, we investigate an interactive semantic parsing framework that explains the predicted LF step by step in natural language and enables the user to make corrections through natural-language feedback for individual steps. We focus on question answering over knowledge bases (KBQA) as an instantiation of our framework, aiming to increase the transparency of the parsing process and help the user trust the final answer. We construct INSPIRED, a crowdsourced dialogue dataset derived from the ComplexWebQuestions dataset. Our experiments show that this framework has the potential to greatly improve overall parse accuracy. Furthermore, we develop a pipeline for dialogue simulation to evaluate our framework w.r.t. a variety of state-of-the-art KBQA models without further crowdsourcing effort. The results demonstrate that our framework promises to be effective across such models.",
+}
+
+@inproceedings{Newman-Griffis2017,
+    author    = {Newman-Griffis, Denis and Lai, Albert  and  Fosler-Lussier, Eric},
+    title     = {Insights into Analogy Completion from the Biomedical Domain},
+    booktitle = {BioNLP 2017},
+    month     = {August},
+    year      = {2017},
+    address   = {Vancouver, Canada},
+    publisher = {Association for Computational Linguistics},
+    pages     = {19--28},
+    url       = {http://www.aclweb.org/anthology/W17-2303}
+}
+@InProceedings{Newman-Griffis2018BioNLP,
+    author    = {Newman-Griffis, Denis and Zirikly, Ayah},
+    title     = {Embedding Transfer for Low-Resource Medical Named Entity Recognition: A Case Study on Patient Mobility},
+    booktitle = {Proceedings of the BioNLP 2018 workshop},
+    year      = {2018},
+    publisher = {Association for Computational Linguistics},
+    pages     = {1--11},
+    location  = {Melbourne, Australia},
+    url       = {http://aclweb.org/anthology/W18-2301}
+}
+@InProceedings{Newman-Griffis2018Repl4NLP,
+    author    = {Newman-Griffis, Denis and Lai, Albert M.  and Fosler-Lussier, Eric},
+    title     = {Jointly Embedding Entities and Text with Distant Supervision},
+    booktitle = {Proceedings of The Third Workshop on Representation Learning for NLP},
+    year      = {2018},
+    publisher = {Association for Computational Linguistics},
+    pages     = {195--206},
+    location  = {Melbourne, Australia},
+    url       = {http://aclweb.org/anthology/W18-3026}
+}
+@inproceedings{whitaker-etal-2019-characterizing,
+    title = {Characterizing the Impact of Geometric Properties of Word Embeddings on Task Performance},
+    author = {Whitaker, Brendan  and Newman-Griffis, Denis  and Haldar, Aparajita  and Ferhatosmanoglu, Hakan  and Fosler-Lussier, Eric},
+    booktitle = {Proceedings of the 3rd Workshop on Evaluating Vector Space Representations for {NLP}},
+    month = {jun},
+    year = {2019},
+    address = {Minneapolis, USA},
+    publisher = {Association for Computational Linguistics},
+    url = {https://www.aclweb.org/anthology/W19-2002},
+    doi = {10.18653/v1/W19-2002},
+    pages = {8--17}
+}
+@inproceedings{newman-griffis-etal-2019-classifying,
+    title = {Classifying the reported ability in clinical mobility descriptions},
+    author = {Newman-Griffis, Denis  and Zirikly, Ayah  and Divita, Guy  and Desmet, Bart},
+    booktitle = {Proceedings of the 18th BioNLP Workshop and Shared Task},
+    month = {aug},
+    year = {2019},
+    address = {Florence, Italy},
+    publisher = {Association for Computational Linguistics},
+    url = {https://www.aclweb.org/anthology/W19-5001},
+    pages = {1--10},
+}
+
+@article{10.1093/jamia/ocaa269,
+	abstract = {{Normalizing mentions of medical concepts to standardized vocabularies is a fundamental component of clinical text analysis. Ambiguity---words or phrases that may refer to different concepts---has been extensively researched as part of information extraction from biomedical literature, but less is known about the types and frequency of ambiguity in clinical text. This study characterizes the distribution and distinct types of ambiguity exhibited by benchmark clinical concept normalization datasets, in order to identify directions for advancing medical concept normalization research.We identified ambiguous strings in datasets derived from the 2 available clinical corpora for concept normalization and categorized the distinct types of ambiguity they exhibited. We then compared observed string ambiguity in the datasets with potential ambiguity in the Unified Medical Language System (UMLS) to assess how representative available datasets are of ambiguity in clinical language.We found that \\&lt;15\\% of strings were ambiguous within the datasets, while over 50\\% were ambiguous in the UMLS, indicating only partial coverage of clinical ambiguity. The percentage of strings in common between any pair of datasets ranged from 2\\% to only 36\\%; of these, 40\\% were annotated with different sets of concepts, severely limiting generalization. Finally, we observed 12 distinct types of ambiguity, distributed unequally across the available datasets, reflecting diverse linguistic and medical phenomena.Existing datasets are not sufficient to cover the diversity of clinical concept ambiguity, limiting both training and evaluation of normalization methods for clinical text. Additionally, the UMLS offers important semantic information for building and evaluating normalization methods.Our findings identify 3 opportunities for concept normalization research, including a need for ambiguity-specific clinical datasets and leveraging the rich semantics of the UMLS in new methods and evaluation measures for normalization.}},
+	author = {Newman-Griffis, Denis and Divita, Guy and Desmet, Bart and Zirikly, Ayah and Ros{\'e}, Carolyn P and Fosler-Lussier, Eric},
+	date-added = {2021-02-16 20:06:27 -0500},
+	date-modified = {2021-02-16 20:06:27 -0500},
+	doi = {10.1093/jamia/ocaa269},
+	eprint = {https://academic.oup.com/jamia/advance-article-pdf/doi/10.1093/jamia/ocaa269/34908292/ocaa269.pdf},
+	issn = {1527-974X},
+	journal = {Journal of the American Medical Informatics Association},
+	month = {12},
+	note = {ocaa269},
+	title = {{Ambiguity in medical concept normalization: An analysis of types and coverage in electronic health record datasets}},
+	url = {https://doi.org/10.1093/jamia/ocaa269},
+	year = {2020},
+	bdsk-url-1 = {https://doi.org/10.1093/jamia/ocaa269}}
+
+@inproceedings{nivre2016universal,
+  title={Universal dependencies v1: A multilingual treebank collection},
+  author={Nivre, Joakim and de Marneffe, Marie-Catherine and Ginter, Filip and Goldberg, Yoav and Hajic, Jan and Manning, Christopher D and McDonald, Ryan and Petrov, Slav and Pyysalo, Sampo and Silveira, Natalia and others},
+  booktitle={Proceedings of the 10th International Conference on Language Resources and Evaluation (LREC 2016)},
+  year={2016}
+}
+
+@InProceedings{nguyen_etal:2012:coling,
+  author    = {Nguyen, Luan  and  {van Schijndel}, Marten  and  Schuler, William},
+  title     = {Accurate Unbounded Dependency Recovery using Generalized Categorial Grammars},
+  booktitle = {Proceedings of COLING 2012},
+  month     = {December},
+  year      = {2012},
+  address   = {Mumbai, India},
+  publisher = {The COLING 2012 Organizing Committee},
+  pages     = {2125--2140},
+  url       = {http://www.aclweb.org/anthology/C12-1130}
+}
+
+@inproceedings{ohetal19sigmorphon,
+    author = {Oh, Byung-Doh and Maneriker, Pranav and Jiang, Nanjiang},
+    year = {2019},
+    title = {{THOMAS}: The hegemonic {OSU} morphological analyzer using seq2seq},
+    booktitle = {Proceedings of the 16th Workshop on Computational Research in Phonetics, Phonology, and Morphology},
+    pages = {80--86},  
+    url = {https://www.aclweb.org/anthology/W19-4210},
+    abstract = {This paper describes the OSU submission to the SIGMORPHON 2019 shared task, Crosslinguality and Context in Morphology. Our system addresses the contextual morphological analysis subtask of Task 2, which is to produce the morphosyntactic description (MSD) of each fully inflected word within a given sentence. We frame this as a sequence generation task and employ a neural encoder-decoder (seq2seq) architecture to generate the sequence of MSD tags given the encoded representation of each token. Follow-up analyses reveal that our system most significantly improves performance on morphologically complex languages whose inflected word forms typically have longer MSD tag sequences. In addition, our system seems to capture the structured correlation between MSD tags, such as that between the "verb" tag and TAM-related tags.}
+}
+
+@inproceedings{ohetal21acl,
+    author = {Oh, Byung-Doh and Clark, Christian and Schuler, William},
+    year = {2021},
+    title = {Surprisal estimators for human reading times need character models},
+    booktitle = {Proceedings of the Joint Conference of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing},
+    pages = {3746-3757},
+    url = {https://aclanthology.org/2021.acl-long.290},
+    abstract = {While the use of character models has been popular in NLP applications, it has not been explored much in the context of psycholinguistic modeling. This paper presents a character model that can be applied to a structural parser-based processing model to calculate word generation probabilities. Experimental results show that surprisal estimates from a structural processing model using this character model deliver substantially better fits to self-paced reading, eye-tracking, and fMRI data than those from large-scale language models trained on much more data. This may suggest that the proposed processing model provides a more humanlike account of sentence processing, which assumes a larger role of morphology, phonotactics, and orthographic complexity than was previously thought.}
+}
+
+@inproceedings{ohschuler21cmcl,
+    author = {Oh, Byung-Doh and Schuler, William},
+    year = {2021},
+    title = {Contributions of propositional content and syntactic category information in sentence processing},
+    booktitle = {Proceedings of the 11th Workshop on Cognitive Modeling and Computational Linguistics},
+    pages = {241-250},
+    url = {https://aclanthology.org/2021.cmcl-1.28},
+    abstract = {Expectation-based theories of sentence processing posit that processing difficulty is determined by predictability in context. While predictability quantified via surprisal has gained empirical support, this representation-agnostic measure leaves open the question of how to best approximate the human comprehender's latent probability model. This work presents an incremental left-corner parser that incorporates information about both propositional content and syntactic categories into a single probability model. This parser can be trained to make parsing decisions conditioning on only one source of information, thus allowing a clean ablation of the relative contribution of propositional content and syntactic category information. Regression analyses show that surprisal estimates calculated from the full parser make a significant contribution to predicting self-paced reading times over those from the parser without syntactic category information, as well as a significant contribution to predicting eye-gaze durations over those from the parser without propositional content information. Taken together, these results suggest a role for propositional content and syntactic category information in incremental sentence processing.}
+}
+
+@inproceedings{oh21cmcl,
+    author = {Oh, Byung-Doh},
+    year = {2021},
+    title = {Team {O}hio {S}tate at {CMCL} 2021 shared task: {F}ine-Tuned {R}o{BERT}a for eye-tracking data prediction},
+    booktitle = {Proceedings of the 11th Workshop on Cognitive Modeling and Computational Linguistics},
+    pages = {97-101},
+    url = {https://aclanthology.org/2021.cmcl-1.11},
+    abstract = {This paper describes Team Ohio State's approach to the CMCL 2021 Shared Task, the goal of which is to predict five eye-tracking features from naturalistic self-paced reading corpora. For this task, we fine-tune a pre-trained neural language model (RoBERTa; Liu et al. 2019) to predict each feature based on the contextualized representations. Moreover, motivated by previous eye-tracking studies, we include word length in characters and proportion of sentence processed as two additional input features. Our best model strongly outperforms the baseline and is also competitive with other systems submitted to the shared task. An ablation study shows that the word length feature contributes to making more accurate predictions, indicating the usefulness of features that are specific to the eye-tracking paradigm.}
+}
+
+@article{ohetal22fai,
+    author = {Oh, Byung-Doh and Clark, Christian and Schuler, William},
+    year = {2022},
+    title = {Comparison of structural parsers and neural language models as surprisal estimators},
+    journal = {Frontiers in Artificial Intelligence},
+    volume = {5},
+    number = {777963},
+    url = {https://doi.org/10.3389/frai.2022.777963},
+    abstract = {Expectation-based theories of sentence processing posit that processing difficulty is determined by predictability in context. While predictability quantified via surprisal has gained empirical support, this representation-agnostic measure leaves open the question of how to best approximate the human comprehender's latent probability model. This article first describes an incremental left-corner parser that incorporates information about common linguistic abstractions such as syntactic categories, predicate-argument structure, and morphological rules as a computational-level model of sentence processing. The article then evaluates a variety of structural parsers and deep neural language models as cognitive models of sentence processing by comparing the predictive power of their surprisal estimates on self-paced reading, eye-tracking, and fMRI data collected during real-time language processing. The results show that surprisal estimates from the proposed left-corner processing model deliver comparable and often superior fits to self-paced reading and eye-tracking data when compared to those from neural language models trained on much more data. This may suggest that the strong linguistic generalizations made by the proposed processing model may help predict humanlike processing costs that manifest in latency-based measures, even when the amount of training data is limited. Additionally, experiments using Transformer-based language models sharing the same primary architecture and training data show a surprising negative correlation between parameter count and fit to self-paced reading and eye-tracking data. These findings suggest that large-scale neural language models are making weaker generalizations based on patterns of lexical items rather than stronger, more humanlike generalizations based on linguistic structure.}
+}
+
+@inproceedings{ohschuler22emnlp,
+    author = {Oh, Byung-Doh and Schuler, William},
+    year = {2022},
+    title = {Entropy- and distance-based predictors from {GPT-2} attention patterns predict reading times over and above {GPT-2} surprisal},
+    booktitle = {Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing},
+    pages = {9324--9334},
+    url = {https://aclanthology.org/2022.emnlp-main.632},
+    abstract = {Transformer-based large language models are trained to make predictions about the next word by aggregating representations of previous tokens through their self-attention mechanism. In the field of cognitive modeling, such attention patterns have recently been interpreted as embodying the process of cue-based retrieval, in which attention over multiple targets is taken to generate interference and latency during retrieval. Under this framework, this work first defines an entropy-based predictor that quantifies the diffuseness of self-attention, as well as distance-based predictors that capture the incremental change in attention patterns across timesteps. Moreover, following recent studies that question the informativeness of attention weights, we also experiment with alternative methods for incorporating vector norms into attention weights. Regression experiments using predictors calculated from the GPT-2 language model show that these predictors deliver a substantially better fit to held-out self-paced reading and eye-tracking data over a rigorous baseline including GPT-2 surprisal.}
+}
+
+@article{ohschuler23tacl,
+    author = {Oh, Byung-Doh and Schuler, William},
+    year = {2023},
+    title = {Why does surprisal from larger {T}ransformer-based language models provide a poorer fit to human reading times?},
+    journal = {Transactions of the Association for Computational Linguistics},
+    volume = {11},
+    pages = {336--350},
+    publisher = {MIT Press},
+    url = {https://aclanthology.org/2023.tacl-1.20},
+    abstract = {This work presents a linguistic analysis into why larger Transformer-based pre-trained language models with more parameters and lower perplexity nonetheless yield surprisal estimates that are less predictive of human reading times. First, regression analyses show a strictly monotonic, positive log-linear relationship between perplexity and fit to reading times for the more recently released five GPT-Neo variants and eight OPT variants on two separate datasets, replicating earlier results limited to just GPT-2 (Oh et al., 2022). Subsequently, analysis of residual errors reveals a systematic deviation of the larger variants, such as underpredicting reading times of named entities and making compensatory overpredictions for reading times of function words such as modals and conjunctions. These results suggest that the propensity of larger Transformer-based models to 'memorize' sequences during training makes their surprisal estimates diverge from humanlike expectations, which warrants caution in using pre-trained language models to study human language processing.}
+}
+
+@inproceedings{ohschuler23acl,
+    author = {Oh, Byung-Doh and Schuler, William},
+    year = {2023},
+    title = {Token-wise decomposition of autoregressive language model hidden states for analyzing model predictions},
+    booktitle = {Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics},
+    pages = {10105--10117},
+	  url = {https://aclanthology.org/2023.acl-long.562},
+    abstract = {While there is much recent interest in studying why Transformer-based large language models make predictions the way they do, the complex computations performed within each layer have made their behavior somewhat opaque. To mitigate this opacity, this work presents a linear decomposition of final hidden states from autoregressive language models based on each initial input token, which is exact for virtually all contemporary Transformer architectures. This decomposition allows the definition of probability distributions that ablate the contribution of specific input tokens, which can be used to analyze their influence on model probabilities over a sequence of upcoming words with only one forward pass from the model. Using the change in next-word probability as a measure of importance, this work first examines which context words make the biggest contribution to language model predictions. Regression experiments suggest that Transformer-based language models rely primarily on collocational associations, followed by linguistic factors such as syntactic dependencies and coreference relationships in making next-word predictions. Additionally, analyses using these measures to predict syntactic dependencies and coreferent mention spans show that collocational association and repetitions of the same token largely explain the language models' predictions on these tasks.}
+}
+
+@inproceedings{ohschuler23emnlp,
+    author = {Oh, Byung-Doh and Schuler, William},
+    year = {2023},
+    title = {Transformer-based language model surprisal predicts human reading times best with about two billion training tokens},
+    booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2023},
+    url = {https://arxiv.org/abs/2304.11389},
+    abstract = {Recent psycholinguistic studies have drawn conflicting conclusions about the relationship between the quality of a language model and the ability of its surprisal estimates to predict human reading times, which has been speculated to be due to the large gap in both the amount of training data and model capacity across studies. The current work aims to consolidate these findings by evaluating surprisal estimates from Transformer-based language model variants that vary systematically in the amount of training data and model capacity on their ability to predict human reading times. The results show that surprisal estimates from most variants with contemporary model capacities provide the best fit after seeing about two billion training tokens, after which they begin to diverge from humanlike expectations. Additionally, newly-trained smaller model variants reveal a 'tipping point' at convergence, after which the decrease in language model perplexity begins to result in poorer fits to human reading times. These results suggest that the massive amount of training data is mainly responsible for the poorer fit achieved by surprisal from larger pre-trained language models, and that a certain degree of model capacity is necessary for Transformer-based language models to capture humanlike expectations.}
+}
+
+@inproceedings{plantinga2018exploration,
+  title     = {An exploration of mimic architectures for residual network based spectral mapping},
+  author    = {Plantinga, Peter and Bagchi, Deblin and Fosler-Lussier, Eric},
+  booktitle = {IEEE Workshop on Spoken Language Technology (SLT)},
+  year      = {2018},
+  month     = {December},
+  location  = {Athens, Greece},
+  url       = {https://arxiv.org/abs/1809.09756},
+}
+
+@inproceedings{plantinga2019towards,
+  title     = {Towards real-time mispronunciation detection in kids' speech},
+  author    = {Plantinga, Peter and Fosler-Lussier, Eric},
+  booktitle = {IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)},
+  year      = {2019},
+  month     = {December},
+  location  = {Sentosa, Singapore},
+}
+
+@inproceedings{Plantinga2020,
+	author = {P. Plantinga and D. Bagchi and E. Fosler-Lussier},
+	booktitle = {International Conference on Acoustics, Speech, and Signal Processing},
+	date-added = {2020-04-29 17:31:36 -0400},
+	date-modified = {2020-05-07 13:10:42 -0400},
+	title = {Phonetic Feedback for Speech Enhancement With and Without Parallel Speech Data},
+	url = {https://doi.org/10.1109/ICASSP40776.2020.9054001},
+	year = {2020}}
+
+@article{plantinga2021perceptual,
+	author = {Plantinga, Peter and Bagchi, Deblin and Fosler-Lussier, Eric},
+	date-added = {2022-10-05 15:22:47 -0400},
+	date-modified = {2022-12-18 17:53:06 -0500},
+	journal = {arXiv preprint},
+	title = {Perceptual Loss with Recognition Model for Single-Channel Enhancement and Robust ASR},
+	volume = {arXiv:2112.06068},
+	year = {2021}}
+
+
+@inproceedings{Prabhavalkar:2012cr,
+	Author = {Prabhavalkar, Rohit and Keshet, Joseph and Livescu, Karen and Fosler-Lussier, Eric},
+	Booktitle = {Symposium on Machine Learning in Speech and Language Processing (MLSLP)},
+	Date-Added = {2013-09-10 13:24:03 +0000},
+	Date-Modified = {2013-09-10 13:24:03 +0000},
+	Pages = {4pp},
+	Title = {Discriminative Spoken Term Detection with Limited Data},
+	Year = {2012}}
+
+@inproceedings{Prabhavalkar:2012vn,
+	Author = {Prabhavalkar, Rohit and Droppo, Jasha},
+	Booktitle = {Proc. ICASSP},
+	Date-Added = {2012-03-24 21:03:59 +0000},
+	Date-Modified = {2012-03-24 21:04:30 +0000},
+	Title = {A Chunk-based Phonetic Score for Mobile Voice Search},
+	Year = {2012}}
+
+@inproceedings{Prabhavalkar:2013tg,
+	Author = {Prabhavalkar, Rohit and Livescu, Karen and Fosler-Lussier, Eric and Keshet, Joseph},
+	Booktitle = {Proceedings of ICASSP},
+	Date-Added = {2013-09-10 13:29:32 +0000},
+	Date-Modified = {2013-09-10 13:29:32 +0000},
+	Pages = {5pp},
+	Title = {Discriminative Articulatory Models for Spoken Term Detection in Low-Resource Conversational Settings},
+	Year = {2013}}
+
+@inproceedings{Raghavan:2012kx,
+	Author = {Raghavan, Preethi and Fosler-Lussier, Eric and Brew, Chris and Lai, Albert},
+	Booktitle = {ACM SIGHIT International Health Informatics Symposium},
+	Date-Added = {2012-03-24 20:59:42 +0000},
+	Date-Modified = {2012-03-24 21:00:47 +0000},
+	Title = {Medical Event Coreference Resolution using the UMLS Metathesaurus and Temporal Reasoning},
+	Year = {2012}}
+
+@inproceedings{Raghavan:2012fk,
+	Author = {Raghavan, Preethi and Fosler-Lussier, Eric and Lai, Albert},
+	Booktitle = {North American Association for Computational Linguistics Annual Meeting - Human Language Technologies Conference (NAACL HLT 2012)},
+	Date-Added = {2012-03-24 20:57:27 +0000},
+	Date-Modified = {2012-03-24 20:58:02 +0000},
+	Title = {Exploring Semi-Supervised Coreference Resolution of Medical Concepts using Semantic and Temporal Features},
+	Year = {2012}}
+
+@inproceedings{Raghavan:2012dq,
+	Author = {Raghavan, Preethi and Fosler-Lussier, Eric and Lai, Albert},
+	Booktitle = {AMIA Annual Symposium},
+	Date-Added = {2013-09-10 13:24:03 +0000},
+	Date-Modified = {2013-09-10 13:24:03 +0000},
+	Pages = {1366-1374},
+	Title = {Inter-Annotator Reliability of Medical Events, Coreferences and Temporal Relations in Clinical Narratives by Annotators with Varying Levels of Clinical Expertise},
+	Year = {2012}}
+
+
+@inproceedings{Raghavan:2012mz,
+	Author = {Raghavan, Preethi and Fosler-Lussier, Eric and Lai, Albert},
+	Booktitle = {Association for Computational Linguistics Annual Meeting (ACL 2012)},
+	Date-Added = {2013-09-10 13:24:03 +0000},
+	Date-Modified = {2013-09-10 13:24:03 +0000},
+	Pages = {5pp},
+	Title = {Learning to Temporally Order Medical Events in Clinical Text},
+	Year = {2012}}
+
+
+@inproceedings{Raghavan:2012gf,
+	Author = {Raghavan, Preethi and Fosler-Lussier, Eric and Lai, Albert},
+	Booktitle = {Proceedings of the 2012 Workshop on Biomedical Natural Language Processing (BioNLP 2012)},
+	Date-Added = {2013-09-10 13:24:03 +0000},
+	Date-Modified = {2013-09-10 13:24:03 +0000},
+	Pages = {29-37},
+	Title = {Temporal Classification of Medical Events},
+	Year = {2012}}
+
+@article{llc:raja:mwhite:2014,
+author = {Rajkumar, Rajakrishnan and White, Michael},
+title = {Better Surface Realization through Psycholinguistics},
+journal = {Language and Linguistics Compass},
+volume = {8},
+number = {10},
+issn = {1749-818X},
+documenturl = {http://dx.doi.org/10.1111/lnc3.12090},
+doi = {10.1111/lnc3.12090},
+pages = {428--448},
+year = {2014},
+}
+
+@Article{rajakrishnanetal:2016:cognition,
+  author    = {Rajkumar, Rajakrishnan and {van Schijndel}, Marten and White, Michael and Schuler, William},
+  title     = {Investigating Locality Effects and Surprisal in Written English Syntactic Choice Phenomena},
+  journal   = {Cognition},
+  month     = {October},
+  volume    = {155},
+  publisher = {Elsevier},
+  year      = {2016},
+  pages     = {204--232},
+  documenturl = {http://www.sciencedirect.com/science/article/pii/S001002771630155X},
+  url       = {http://www.ling.ohio-state.edu/~mwhite/papers/Rajkumar-vanSchijndel-White-Schuler-Cognition-2016-to-appear.pdf}
+}
+
+@inproceedings{rao-etal-2019-tree,
+    title = "A Tree-to-Sequence Model for Neural {NLG} in Task-Oriented Dialog",
+    author = "Rao, Jinfeng  and
+      Upasani, Kartikeya  and
+      Balakrishnan, Anusha  and
+      White, Michael  and
+      Kumar, Anuj  and
+      Subba, Rajen",
+    booktitle = "Proceedings of the 12th International Conference on Natural Language Generation",
+    month = oct # "{--}" # nov,
+    year = "2019",
+    address = "Tokyo, Japan",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W19-8611",
+    doi = "10.18653/v1/W19-8611",
+    pages = "95--100",
+    abstract = "Generating fluent natural language responses from structured semantic representations is a critical step in task-oriented conversational systems. Sequence-to-sequence models on flat meaning representations (MR) have been dominant in this task, for example in the E2E NLG Challenge. Previous work has shown that a tree-structured MR can improve the model for better discourse-level structuring and sentence-level planning. In this work, we propose a tree-to-sequence model that uses a tree-LSTM encoder to leverage the tree structures in the input MR, and further enhance the decoding by a structure-enhanced attention mechanism. In addition, we explore combining these enhancements with constrained decoding to improve semantic correctness. Our experiments not only show significant improvements over standard seq2seq baselines, but also is more data-efficient and generalizes better to hard scenarios.",
+}
+
+@article{rasmussenschuler17,
+ author    = {Rasmussen, Nathan and Schuler, William},
+ title     = {Left-Corner Parsing With Distributed Associative Memory Produces Surprisal and Locality Effects},
+ journal   = {Cognitive Science},
+ publisher = {Wiley},
+ year      = 2017,
+ url       = {http://onlinelibrary.wiley.com/wol1/doi/10.1111/cogs.12511/full}
+}
+
+@inproceedings{Ritter2012calendar,
+ author = {Ritter, Alan and Mausam and Etzioni, Oren and Clark, Sam},
+ title = {Open Domain Event Extraction from Twitter},
+ booktitle = {Proceedings of the 18th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+ series = {KDD '12},
+ year = {2012},
+ url = {http://aritter.github.io/rt080-ritter.pdf},
+}
+
+@article{ritter13missing,
+  author    = {Ritter, Alan  and Zettlemoyer, Luke  and Mausam and Etzioni, Oren},
+  title     = {Modeling Missing Data in Distant Supervision for Information Extraction},
+  journal   = {{TACL}},
+  year      = {2013},
+  volume    = {1},
+  pages     = {367--378},
+  url       = {http://www.transacl.org/wp-content/uploads/2013/10/paperno30.pdf},
+}
+
+@inproceedings{shain-elsner-2019-measuring,
+    title = "Measuring the perceptual availability of phonological features during language acquisition using unsupervised binary stochastic autoencoders",
+    author = "Shain, Cory  and
+      Elsner, Micha",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/N19-1007",
+    doi = "10.18653/v1/N19-1007",
+    pages = "69--85",
+    abstract = "In this paper, we deploy binary stochastic neural autoencoder networks as models of infant language learning in two typologically unrelated languages (Xitsonga and English). We show that the drive to model auditory percepts leads to latent clusters that partially align with theory-driven phonemic categories. We further evaluate the degree to which theory-driven phonological features are encoded in the latent bit patterns, finding that some (e.g. [+-approximant]), are well represented by the network in both languages, while others (e.g. [+-spread glottis]) are less so. Together, these findings suggest that many reliable cues to phonemic structure are immediately available to infants from bottom-up perceptual characteristics alone, but that these cues must eventually be supplemented by top-down lexical and phonotactic information to achieve adult-like phone discrimination. Our results also suggest differences in degree of perceptual availability between features, yielding testable predictions as to which features might depend more or less heavily on top-down cues during child language acquisition.",
+}
+
+@inproceedings{shainetal16,
+  author = {Shain, Cory and Bryce, William and Jin, Lifeng and Krakovna, Victoria and Doshi-Velez, Finale and Miller, Timothy and Schuler, William and Schwartz, Lane},
+  title = {Memory-bounded left-corner unsupervised grammar induction on child-directed input},
+  booktitle = {Proceedings of COLING 2016},
+  address={Osaka},
+  year = {2016},
+  url_Paper = {http://aclweb.org/anthology/C16-1092}
+}
+
+@inproceedings{Shivade2014a,
+author = {Shivade, Chaitanya and Cormack, James and Milward, David},
+booktitle = {Proceedings of the International Workshop on Health Text Mining and Information Analysis, EACL},
+pages = {75--79},
+title = {{Precise Medication Extraction using Agile Text Mining}},
+url = {http://anthology.aclweb.org/W/W14/W14-1111.pdf},
+year = {2014}
+}
+
+@article{Shivade2014b,
+author = {Shivade, Chaitanya and Raghavan, Preethi and Fosler-Lussier, Eric and Embi, Peter J and Elhadad, Noemie and Johnson, Stephen B and Lai, Albert M},
+doi = {10.1136/amiajnl-2013-001935},
+issn = {1527-974X},
+journal = {Journal of the American Medical Informatics Association : JAMIA},
+month = mar,
+number = {2},
+pages = {221--30},
+pmid = {24201027},
+title = {{A review of approaches to identifying patient phenotype cohorts using electronic health records.}},
+url = {http://jamia.bmj.com/content/early/2013/11/07/amiajnl-2013-001935.abstract},
+volume = {21},
+year = {2014}
+}
+
+@article{Shivade2015c,
+author = {Shivade, Chaitanya and Hebert, Courtney and Loptegui, Marcelo and de Marneffe, Marie-Catherine and Fosler-Lussier, Eric and Lai, Albert M.},
+journal = {Journal of Biomedical Informatics},
+title = {{Textual Inference for Eligibility Criteria Resolution in Clinical trials}},
+year = {2015}
+}
+
+@article{Shivade2014d,
+author = {Shivade, Chaitanya and Malewadkar, Pranav and Fosler-Lussier, Eric and Lai, Albert M.},
+journal = {Journal of Biomedical Informatics},
+title = {{Comparison of UMLS terminologies to identify risk of heart disease in clinical notes}},
+year = {2015}
+}
+
+@inproceedings{Shivade2015a,
+address = {Denver, Colorado},
+author = {Shivade, Chaitanya and de Marneffe, Marie-Catherine and Fosler-lussier, Eric and Lai, Albert M},
+booktitle = {Proceedings of the North American Association of Computational Linguistics Annual Meeting (NAACL)},
+month = jun,
+pages = {483--493},
+publisher = {Association for Computational Linguistics},
+title = {{Corpus-based discovery of semantic intensity scales}},
+url = {http://www.aclweb.org/anthology/N15-1051},
+year = {2015}
+}
+
+
+@inproceedings{Shivade2015b,
+address = {Denver, Colorado},
+author = {Shivade, Chaitanya and de Marneffe, Marie Catherine and Fosler-Lussier, Eric and Lai, Albert M},
+booktitle = {Proceedings of the Workshop on Extra-Propositional Aspects of Meaning in Computational Semantics, NAACL 2015},
+month = jun,
+pages = {41--46},
+publisher = {Association for Computational Linguistics},
+title = {{Extending NegEx with Kernel Methods for Negation Detection in Clinical Text}},
+url = {http://www.aclweb.org/anthology/W15-13\#page=51},
+year = {2015}
+}
+
+@inproceedings{Shivade2016IdentificationCA,
+  title={Identification, characterization, and grounding of gradable terms in clinical text},
+  author={Chaitanya Shivade and Marie-Catherine de Marneffe and Eric Fosler-Lussier and Albert M. Lai},
+  booktitle={Proceedings of the 15th Workshop on Biomedical Natural Language Processing},
+  year={2016},
+  pages = {17--26},
+	url = {http://aclweb.org/anthology/W16-2903}
+}
+
+@inproceedings{Silveira2014,
+ author={Silveira, Natalia  and Dozat, Timothy and de Marneffe, Marie-Catherine and Bowman, Samuel and Connor, Miriam and Bauer, John and Manning, Christopher D.},
+ year={2014},
+ title={A Gold Standard Dependency Corpus for English},
+ booktitle={Proceedings of the 9th Conference on Language Resources and Evaluation},
+ url={http://nlp.stanford.edu/pubs/Gold_LREC14.pdf}
+}
+
+@InProceedings{recasens-demarneffe-potts:2013:NAACL-HLT,
+  author    = {Recasens, Marta  and  de Marneffe, Marie-Catherine  and  Potts, Christopher},
+  title     = {The Life and Death of Discourse Entities: Identifying Singleton Mentions},
+  booktitle = {Proceedings of the 2013 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  month     = {June},
+  year      = {2013},
+  address   = {Atlanta, Georgia},
+  publisher = {Association for Computational Linguistics},
+  pages     = {627--633},
+  url       = {http://www.aclweb.org/anthology/N13-1071}
+}
+
+@inproceedings{Serai20EndToEnd,
+	author = {P. Serai and A. Stiff and E. Fosler-Lussier},
+	booktitle = {International Conference on Acoustics, Speech, and Signal Processing},
+	date-added = {2020-05-07 13:10:45 -0400},
+	date-modified = {2020-05-07 13:12:02 -0400},
+	pages = {5pp},
+	title = {End to End Speech Recognition Error Prediction with Sequence to Sequence Learning},
+	url = {https://doi.org/10.1109/ICASSP40776.2020.9054398},
+	year = {2020}}
+
+@InProceedings{sirts-EtAl:2014:P14-2,
+  author    = {Sirts, Kairit  and  Eisenstein, Jacob  and  Elsner, Micha  and  Goldwater, Sharon},
+  title     = {POS induction with distributional and morphological information using a distance-dependent Chinese restaurant process},
+  booktitle = {Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)},
+  month     = {June},
+  year      = {2014},
+  address   = {Baltimore, Maryland},
+  publisher = {Association for Computational Linguistics},
+  pages     = {265--271},
+  url       = {http://www.aclweb.org/anthology/P14-2044}
+}
+
+@inproceedings{srinivasan-etal-2018-corpus,
+    title = "Corpus-based Content Construction",
+    author = "Srinivasan, Balaji Vasan  and
+      Maneriker, Pranav  and
+      Krishna, Kundan  and
+      Modani, Natwar",
+    booktitle = "Proceedings of the 27th International Conference on Computational Linguistics",
+    month = aug,
+    year = "2018",
+    address = "Santa Fe, New Mexico, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/C18-1297",
+    pages = "3505--3515",
+    abstract = "Enterprise content writers are engaged in writing textual content for various purposes. Often, the text being written may already be present in the enterprise corpus in the form of past articles and can be re-purposed for the current needs. In the absence of suitable tools, authors manually curate/create such content (sometimes from scratch) which reduces their productivity. To address this, we propose an automatic approach to generate an initial version of the author{'}s intended text based on an input content snippet. Starting with a set of extracted textual fragments related to the snippet based on the query words in it, the proposed approach builds the desired text from these fragment by simultaneously optimizing the information coverage, relevance, diversity and coherence in the generated content. Evaluations on standard datasets shows improved performance against existing baselines on several metrics.",
+}
+
+
+@inproceedings{Stevens17,
+	title={Predicting projection from rational use of prosody in manner adverb utterances},
+	author={Stevens, Jon Scott and de Marneffe, Marie-Catherine de Marneffe and Speer, Shari R. and Tonhauser, Judith},
+	booktitle={Proceedings of the Cognitive Science Society Annual Meeting 2017},
+	year={2017},
+  url       = {http://www.ling.ohio-state.edu/~demarneffe.1/papers/Stevens-deMarneffe-Speer-Tonhauser.pdf}
+}
+
+@inproceedings{stevens-guille-etal-2020-neural,
+    title = "Neural {NLG} for Methodius: From {RST} Meaning Representations to Texts",
+    author = "Stevens-Guille, Symon  and
+      Maskharashvili, Aleksandre  and
+      Isard, Amy  and
+      Li, Xintong  and
+      White, Michael",
+    booktitle = "Proceedings of the 13th International Conference on Natural Language Generation",
+    month = dec,
+    year = "2020",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.inlg-1.37",
+    pages = "306--315",
+    abstract = "While classic NLG systems typically made use of hierarchically structured content plans that included discourse relations as central components, more recent neural approaches have mostly mapped simple, flat inputs to texts without representing discourse relations explicitly. In this paper, we investigate whether it is beneficial to include discourse relations in the input to neural data-to-text generators for texts where discourse relations play an important role. To do so, we reimplement the sentence planning and realization components of a classic NLG system, Methodius, using LSTM sequence-to-sequence (seq2seq) models. We find that although seq2seq models can learn to generate fluent and grammatical texts remarkably well with sufficiently representative Methodius training data, they cannot learn to correctly express Methodius{'}s similarity and contrast comparisons unless the corresponding RST relations are included in the inputs. Additionally, we experiment with using self-training and reverse model reranking to better handle train/test data mismatches, and find that while these methods help reduce content errors, it remains essential to include discourse relations in the input to obtain optimal performance.",
+}
+
+@inproceedings{Stevens-Guille_Maskharashvili_Li_White_2022, 
+address={Edinburgh, Scotland}, 
+title={Generating Discourse Connectives with Pre-trained Language Models: Conditioning on Discourse Relations Helps Reconstruct the PDTB}, 
+url={https://www.asc.ohio-state.edu/white.1240/papers/Stevens-Guille_et_al.sigdial2022.pdf}, 
+booktitle={Proceedings of SIGDIAL-22}, 
+author={Stevens-Guille, Symon J. and Maskharashvili, Aleksandre and Li, Xintong and White, Michael}, 
+year={2022} }
+
+@INPROCEEDINGS{stiff2019improving,
+  author={A. {Stiff} and P. {Serai} and E. {Fosler-Lussier}},
+  booktitle={ICASSP 2019 - 2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  title={Improving Human-computer Interaction in Low-resource Settings with Text-to-phonetic Data Augmentation},
+  year={2019},
+  volume={},
+  number={},
+  pages={7320-7324},
+  keywords={human computer interaction;pattern classification;speech recognition;text analysis;inferred phonetic information;semantically important acoustic regularities;general purpose ASR;speech-based virtual patient;speech transcripts;classification model;human-computer interaction;low-resource settings;text-to-phonetic data augmentation;off-the-shelf speech recognition systems;application development;general-purpose systems;specialized domains;catastrophic-errors;sufficient audio data;custom acoustic models;niche tasks;text classification tasks;in-domain audio data;typewritten text training data;Speech recognition;Phonetics;Training;Task analysis;Acoustics;Computational modeling;Data models;Low-resource;spoken dialog systems;chatbot},
+  doi={10.1109/ICASSP.2019.8682550},
+  ISSN={},
+  month={May},
+  url={https://ieeexplore.ieee.org/document/8682550}
+}
+
+@inproceedings{stiff-etal-2020-self,
+    title = "How Self-Attention Improves Rare Class Performance in a Question-Answering Dialogue Agent",
+    author = "Stiff, Adam  and
+      Song, Qi  and
+      Fosler-Lussier, Eric",
+    booktitle = "Proceedings of the 21th Annual Meeting of the Special Interest Group on Discourse and Dialogue",
+    month = jul,
+    year = "2020",
+    address = "1st virtual meeting",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.sigdial-1.24",
+    pages = "196--202",
+    abstract = "Contextualized language modeling using deep Transformer networks has been applied to a variety of natural language processing tasks with remarkable success. However, we find that these models are not a panacea for a question-answering dialogue agent corpus task, which has hundreds of classes in a long-tailed frequency distribution, with only thousands of data points. Instead, we find substantial improvements in recall and accuracy on rare classes from a simple one-layer RNN with multi-headed self-attention and static word embeddings as inputs. While much research has used attention weights to illustrate what input is important for a task, the complexities of our dialogue corpus offer a unique opportunity to examine how the model represents what it attends to, and we offer a detailed analysis of how that contributes to improved performance on rare classes. A particularly interesting phenomenon we observe is that the model picks up implicit meanings by splitting different aspects of the semantics of a single word across multiple attention heads.",
+}
+
+@article{Stiff_White_Fosler-Lussier_Jin_Jaffe_Danforth_2022, 
+title={A randomized prospective study of a hybrid rule- and data-driven virtual patient}, 
+url={https://doi.org/10.1017/S1351324922000420}, 
+journal={Natural Language Engineering}, 
+pages={1-42},
+author={Stiff, Adam and White, Michael and Fosler-Lussier, Eric and Jin, Lifeng and Jaffe, Evan and Danforth, Douglas}, 
+year={2022} }
+
+@InProceedings{strauss-EtAl:2016:WNUT,
+  author    = {Strauss, Benjamin  and  Toma, Bethany  and  Ritter, Alan  and  de Marneffe, Marie-Catherine  and  Xu, Wei},
+  title     = {Results of the {WNUT}16 Named Entity Recognition Shared Task},
+  booktitle = {Proceedings of the 2nd Workshop on Noisy User-generated Text (WNUT)},
+  pages     = {138--144},
+  year = {2016},
+  url       = {http://aclweb.org/anthology/W16-3919}
+}
+
+@inproceedings{SunderFosler2021,
+	author = {V. Sunder and E. Fosler-Lussier},
+	booktitle = {International Conference on Acoustics, Speech, and Signal Processing},
+	date-added = {2021-02-16 20:07:23 -0500},
+	date-modified = {2021-02-16 20:10:52 -0500},
+	title = {Handling Class Imbalance in Low-Resource Dialogue Systems by Combining Few-Shot Classification and Interpolation},
+	year = {2021}}
+
+
+@inproceedings{Swamy17,
+	title={"i have a feeling trump will win..................": Forecasting Winners and Losers from User Predictions on {T}witter},
+	author={Sandesh Swamy and Alan Ritter and Marie-Catherine de Marneffe},
+	booktitle={Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+	year={2017},
+	pages     = {1584--1593},
+  url       = {http://aclweb.org/anthology/D17-1166}
+}
+
+@InProceedings{thadani-martin-white:2012:POSTERS,
+  author    = {Thadani, Kapil  and  Martin, Scott  and  White, Michael},
+  title     = {A Joint Phrasal and Dependency Model for Paraphrase Alignment},
+  booktitle = {Proceedings of COLING 2012: Posters},
+  month     = {December},
+  year      = {2012},
+  address   = {Mumbai, India},
+  publisher = {The COLING 2012 Organizing Committee},
+  pages     = {1229--1238},
+  url       = {http://www.aclweb.org/anthology/C12-2120}
+}
+
+@InProceedings{vanschijndel-elsner:2014:ACL,
+  author    = {{van Schijndel}, Marten  and  Elsner, Micha},
+  title     = {Bootstrapping into Filler-Gap: An Acquisition Story},
+  booktitle = {Proceedings of ACL 2014},
+  month     = {June},
+  year      = {2014},
+  address   = {Baltimore, Maryland},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1084--1093},
+  url       = {http://www.aclweb.org/anthology/P14-1102}
+}
+
+@InProceedings{vanschijndel-etal:2014:CogSci,
+  author    = {{van Schijndel}, Marten  and  Schuler, William  and  Culicover, Peter W.},
+  title     = {Frequency Effects in the Processing of Unbounded Dependencies},
+  booktitle = {Proceedings of CogSci 2014},
+  month     = {July},
+  year      = {2014},
+  address   = {Quebec, QC, CA},
+  publisher = {Cognitive Science Society},
+  pages     = {1658--1663},
+  url       = {https://mindmodeling.org/cogsci2014/papers/289/paper289.pdf}
+}
+
+@InProceedings{vanschijndel-exley-schuler:2012:CMCL,
+  author    = {{van Schijndel}, Marten  and  Exley, Andy  and  Schuler, William},
+  title     = {Connectionist-Inspired Incremental PCFG Parsing},
+  booktitle = {Proceedings of the 3rd Workshop on Cognitive Modeling and Computational Linguistics (CMCL 2012)},
+  month     = {June},
+  year      = {2012},
+  address   = {Montr{\'e}al, Canada},
+  publisher = {Association for Computational Linguistics},
+  pages     = {51--60},
+  url       = {http://www.aclweb.org/anthology/W12-1705}
+}
+
+@article{vanschijndel-exley-schuler:2013:topics,
+  author    = {{van Schijndel}, Marten and Exley, Andy and Schuler, William},
+  title     = {A Model of Language Processing as Hierarchic Sequential Prediction},
+  journal   = {Topics in Cognitive Science},
+  month     = {July},
+  volume    = {5},
+  issue     = {3},
+  year      = {2013},
+  pages     = {522--540},
+  publisher = {Cognitive Science Society},
+  url       = {http://onlinelibrary.wiley.com/doi/10.1111/tops.12034/pdf}
+}
+
+@InProceedings{vanschijndel-murphy-schuler:2015:cmcl,
+  author    = {{van Schijndel}, Marten and Murphy, Brian and Schuler, William},
+  title     = {Evidence of syntactic working memory usage in {MEG} data},
+  booktitle = {Proceedings of the 6th Annual Workshop on Cognitive Modeling and Computational Linguistics (CMCL 2015)},
+  month     = {June},
+  year      = {2015},
+  address   = {Denver, Colorado, USA},
+  publisher = {Association for Computational Linguistics},
+  pages     = {79--88},
+  url       = {http://www.aclweb.org/anthology/W/W15/W15-1109.pdf}
+}
+
+@InProceedings{vanschijndel-nguyen-schuler:2013:CMCL,
+  author    = {{van Schijndel}, Marten  and  Nguyen, Luan  and  Schuler, William},
+  title     = {An Analysis of Memory-based Processing Costs using Incremental Deep Syntactic Dependency Parsing},
+  booktitle = {Proceedings of the Fourth Annual Workshop on Cognitive Modeling and Computational Linguistics (CMCL)},
+  month     = {August},
+  year      = {2013},
+  address   = {Sofia, Bulgaria},
+  publisher = {Association for Computational Linguistics},
+  pages     = {37--46},
+  url       = {http://www.aclweb.org/anthology/W13-2605}
+}
+
+@InProceedings{vanschijndel-schuler:2013:NAACL,
+  author    = {{van Schijndel}, Marten  and  Schuler, William},
+  title     = {An Analysis of Frequency- and Memory-Based Processing Costs},
+  booktitle = {Proceedings of NAACL 2013},
+  month     = {June},
+  year      = {2013},
+  address   = {Atlanta, Georgia},
+  publisher = {Association for Computational Linguistics},
+  pages     = {95--105},
+  url       = {http://www.aclweb.org/anthology/N13-1010}
+}
+
+@InProceedings{vanschijndelschuler:2015:NAACL,
+  author    = {{van Schijndel}, Marten and Schuler, William},
+  title     = {Hierarchic syntax improves reading time prediction},
+  booktitle = {Proceedings of NAACL 2015},
+  month     = {June},
+  year      = {2015},
+  address   = {Denver, Colorado, USA},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1597--1605},
+  url       = {http://www.aclweb.org/anthology/N/N15/N15-1183.pdf}
+}
+
+@InProceedings{vanschijndelschuler:2017:cogsci,
+  author    = {van Schijndel, Marten and Schuler, William},
+  title     = {Approximations of Predictive Entropy Correlate with Reading Times},
+  booktitle = {Proceedings of CogSci 2017},
+  month     = {July},
+  year      = {2017},
+  address   = {London, UK},
+  publisher = {Cognitive Science Society},
+}
+
+@InProceedings{tabassum-ritter-xu:2016:EMNLP2016,
+  author    = {Tabassum, Jeniya  and  Ritter, Alan  and  Xu, Wei},
+  title     = {TweeTime : A Minimally Supervised Method for Recognizing and Normalizing Time Expressions in Twitter},
+  booktitle = {Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing},
+  month     = {November},
+  year      = {2016},
+  address   = {Austin, Texas},
+  publisher = {Association for Computational Linguistics},
+  pages     = {307--318},
+  url       = {https://aclweb.org/anthology/D16-1030}
+}
+
+@inproceedings{tabassum-etal-2020-code,
+    title = "Code and Named Entity Recognition in {S}tack{O}verflow",
+    author = "Tabassum, Jeniya  and
+      Maddela, Mounica  and
+      Xu, Wei  and
+      Ritter, Alan",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.acl-main.443",
+    pages = "4913--4926",
+}
+
+@inproceedings{white-2019-evaluation,
+    title = "Evaluation Order Effects in Dynamic Continuized {CCG}: From Negative Polarity Items to Balanced Punctuation",
+    author = "White, Michael",
+    booktitle = "Proceedings of the Society for Computation in Linguistics ({SC}i{L}) 2019",
+    year = "2019",
+    url = "https://www.aclweb.org/anthology/W19-0123",
+    doi = "10.7275/kpch-rk05",
+    pages = "226--235",
+}
+
+@InProceedings{white:2012:INLG2012,
+  author    = {White, Michael},
+  title     = {Shared Task Proposal: Syntactic Paraphrase Ranking},
+  booktitle = {Proceedings of the Seventh International Natural Language Generation Conference (INLG)},
+  month     = {May},
+  year      = {2012},
+  address   = {Utica, IL},
+  publisher = {Association for Computational Linguistics},
+  pages     = {150--153},
+  url       = {http://www.aclweb.org/anthology/W12-1528}
+}
+
+@InProceedings{white-rajkumar:2012:EMNLP-CoNLL,
+  author    = {White, Michael  and  Rajkumar, Rajakrishnan},
+  title     = {Minimal Dependency Length in Realization Ranking},
+  booktitle = {Proceedings of the 2012 Joint Conference on Empirical Methods in Natural Language Processing and Computational Natural Language Learning (EMNLP-12)},
+  month     = {July},
+  year      = {2012},
+  address   = {Jeju Island, Korea},
+  publisher = {Association for Computational Linguistics},
+  pages     = {244--255},
+  url       = {http://www.aclweb.org/anthology/D12-1023}
+}
+
+@InProceedings{white:inlg14,
+  author = 	 {Michael White},
+  title = 	 {Towards Surface Realization with {CCGs} Induced from Dependencies},
+  booktitle = {Proceedings of the Eighth International Natural Language Generation Conference (INLG)},
+  year = 	 {2014},
+  url = {http://www.aclweb.org/anthology/W14-4424}}
+
+@InCollection{white-rajkumar-ito-speer:nlgi-chapter:2014,
+  author = 	 {Michael White and Rajakrishnan Rajkumar and Kiwako Ito and Shari R. Speer},
+  title = 	 {Eye tracking for the online evaluation of prosody in speech synthesis},
+  booktitle = 	 {Natural Language Generation in Interactive Systems},
+  pages = 	 {281--301},
+  publisher = {Cambridge University Press},
+  year = 	 {2014},
+  editor = 	 {Amanda Stent and Srinivas Bangalore},
+  chapter = 	 {12},
+  address = 	 {Cambridge, UK},
+  note = 	 {ISBN 978-1-107-01002-4}}
+
+@InProceedings{white-howcroft:enlg15,
+  author = 	 {Michael White and David M. Howcroft},
+  title = 	 {Inducing Clause-Combining Rules: A Case Study with the {SPaRKy} Restaurant Corpus},
+  booktitle = {Proceedings of the 15th European Workshop on Natural Language Generation (ENLG)},
+  url = {http://www.aclweb.org/anthology/W15-4704},
+  year = 	 2015}
+
+@InProceedings{white-duan-king:xci17,
+  author = 	 {Michael White and Manjuan Duan and David L. King},
+  title = 	 {A Simple Method for Clarifying Sentences with Coordination Ambiguities},
+  url = {http://www.ling.ohio-state.edu/~white.1240/papers/White-Duan-King-XCI-INLG-17-to-appear.pdf},
+  booktitle = {Proceedings of the Explainable Computational Intelligence Workshop at INLG-17},
+  year = 	 2017}
+
+@InProceedings{white-et-al:2017:tagplus,
+  author = 	 {Michael White and Simon Charlow and Jordan Needle and Dylan Bumford},
+  title = 	 {Parsing with Dynamic Continuized {CCG}},
+  booktitle = {Proceedings of the 13th International Workshop on
+                  Tree-Adjoining Grammar and Related Formalisms (TAG+13)},
+  year = 	 2017,
+  url = {http://www.ling.ohio-state.edu/~white.1240/papers/White-Charlow-Needle-Bumford-tagplus17-to-appear.pdf}}
+
+
+@article{Xu-EtAl-2014:TACL,
+  author =  {Wei Xu and Alan Ritter and Chris Callison-Burch and William B. Dolan and Yangfeng Ji},
+  title =   {Extracting Lexically Divergent Paraphrases from {Twitter}},
+  journal = {Transactions of the Association for Computational Linguistics (TACL)},
+  volume =  {2},
+  number =  {1},
+  year =    {2014},
+  url = {http://www.cis.upenn.edu/~xwe/files/tacl2014-extracting-paraphrases-from-twitter.pdf}
+}
+
+@InProceedings{gao-xu-callisonburch:2015:NAACL-HLT,
+  author    = {Gao, Mingkun  and  Xu, Wei  and  Callison-Burch, Chris},
+  title     = {Cost Optimization in Crowdsourcing Translation: Low cost translations made even cheaper},
+  booktitle = {Proceedings of the 2015 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  month     = {May--June},
+  year      = {2015},
+  address   = {Denver, Colorado},
+  publisher = {Association for Computational Linguistics},
+  pages     = {705--713},
+  url       = {http://www.aclweb.org/anthology/N15-1072}
+}
+
+
+@article{Xu-EtAl:2015:TACL,
+  author = {Wei Xu and Chris Callison-Burch and Courtney Napoles},
+  title = {Problems in Current Text Simplification Research: New Data Can
+Help},
+  journal = {Transactions of the Association for Computational Linguistics (TACL)},
+  volume = {3},
+  year = {2015},
+  url = {http://www.cis.upenn.edu/~ccb/publications/publications/new-data-for-text-simplification.pdf},
+  pages = {283--297}
+}
+
+@inproceedings{xu2015user,
+  author    = {Daniel Preo{\c t}iuc-Pietro and Wei Xu and Lyle Ungar},
+  title     = {Discovering User Attribute Stylistic Differences via Paraphrasing},
+  booktitle = {Proceedings of the 30th AAAI Conference on Artificial Intelligence (AAAI)},
+  url = {https://cocoxu.github.io/publications/AAAI_2016_gender_paraphrase.pdf},
+  year = {2016}
+}
+
+@article{Xu-EtAl:2016:TACL,
+   author = {Wei Xu and Courtney Napoles and Ellie Pavlick and Quanze Chen and Chris Callison-Burch},
+   title = {Optimizing Statistical Machine Translation for Text Simplification},
+   journal = {Transactions of the Association for Computational Linguistics (TACL)},
+   volume = {4},
+   year = {2016},
+   url = {https://cocoxu.github.io/publications/tacl2016-smt-simplification.pdf},
+   pages = {401--415}
+ }
+
+@article{zarcone_etal:2016:frontiers,
+  author    = {Zarcone, Alessandra and {van Schijndel}, Marten and Vogels, Jorrig and Demberg, Vera},
+  title     = {Salience and attention in surprisal-based accounts of language processing},
+  doi       = {10.3389/fpsyg.2016.00844},
+  journal   = {Frontiers in Psychology},
+  month     = {June},
+  day       = {06},
+  volume    = {7},
+  number    = {844},
+  year      = {2016},
+  url       = {http://cllt.osu.edu/publications/zarcone_etal-2016-salience_attention_surprisal.pdf},
+  documenturl = {http://journal.frontiersin.org/article/10.3389/fpsyg.2016.00844/full}
+}
+
+@inproceedings{shainetal16:cl4lc,
+  author = {Shain, Cory and {van Schijndel}, Marten and Futrell, Richard and Gibson, Edward and Schuler, William},
+  title = {Memory access during incremental sentence processing causes reading time latency},
+  booktitle = {COLING 2016: Workshop on Computational Linguistics for Linguistic Complexity},
+  address={Osaka},
+  year = {2016},
+  note = {(24% oral accept rate)},
+  url_Paper = {http://aclweb.org/anthology/W/W16/W16-4106.pdf},
+  url_Code = {https://github.com/modelblocks/modelblocks-release}
+}
+
+@inproceedings{shainetal18:lincr,
+  title = {Deep syntactic annotations for broad-coverage psycholinguistic modeling},
+  author = {Shain, Cory and {van Schijndel}, Marten and Schuler, William},
+  year = {2018},
+  booktitle = {Workshop on Linguistic and Neuro-Cognitive Resources (LREC 2018)},
+  url_Paper = {http://lrec-conf.org/workshops/lrec2018/W9/pdf/9_W9.pdf}
+}
+
+@inproceedings{jaffeetal18,
+  title = {Coreference and Focus in Reading Times},
+  author = {{Jaffe}, Evan and {Shain}, Cory and {Schuler}, William},
+  year = {2018},
+  booktitle = {CMCL 2018},
+  url_Paper = {https://cmclorg.github.io/files/jaffe_etal.pdf}
+}
+
+@inproceedings{shainschuler18,
+  title = {Deconvolutional time series regression: A technique for modeling temporally diffuse effects},
+  author = {Shain, Cory and Schuler, William},
+  booktitle = {EMNLP 2018},
+  year = {2018},
+  url_Paper = {http://aclweb.org/anthology/D18-1288},
+}
