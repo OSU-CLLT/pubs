@@ -1441,8 +1441,8 @@ year={2022} }
     year = {2019},
     title = {{THOMAS}: The hegemonic {OSU} morphological analyzer using seq2seq},
     booktitle = {Proceedings of the 16th Workshop on Computational Research in Phonetics, Phonology, and Morphology},
-    pages = {80--86},  
-    url = {https://www.aclweb.org/anthology/W19-4210},
+    pages = {80--86},
+    url = {https://aclanthology.org/W19-4210},
     abstract = {This paper describes the OSU submission to the SIGMORPHON 2019 shared task, Crosslinguality and Context in Morphology. Our system addresses the contextual morphological analysis subtask of Task 2, which is to produce the morphosyntactic description (MSD) of each fully inflected word within a given sentence. We frame this as a sequence generation task and employ a neural encoder-decoder (seq2seq) architecture to generate the sequence of MSD tags given the encoded representation of each token. Follow-up analyses reveal that our system most significantly improves performance on morphologically complex languages whose inflected word forms typically have longer MSD tag sequences. In addition, our system seems to capture the structured correlation between MSD tags, such as that between the "verb" tag and TAM-related tags.}
 }
 
@@ -1451,7 +1451,7 @@ year={2022} }
     year = {2021},
     title = {Surprisal estimators for human reading times need character models},
     booktitle = {Proceedings of the Joint Conference of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing},
-    pages = {3746-3757},
+    pages = {3746--3757},
     url = {https://aclanthology.org/2021.acl-long.290},
     abstract = {While the use of character models has been popular in NLP applications, it has not been explored much in the context of psycholinguistic modeling. This paper presents a character model that can be applied to a structural parser-based processing model to calculate word generation probabilities. Experimental results show that surprisal estimates from a structural processing model using this character model deliver substantially better fits to self-paced reading, eye-tracking, and fMRI data than those from large-scale language models trained on much more data. This may suggest that the proposed processing model provides a more humanlike account of sentence processing, which assumes a larger role of morphology, phonotactics, and orthographic complexity than was previously thought.}
 }
@@ -1461,7 +1461,7 @@ year={2022} }
     year = {2021},
     title = {Contributions of propositional content and syntactic category information in sentence processing},
     booktitle = {Proceedings of the 11th Workshop on Cognitive Modeling and Computational Linguistics},
-    pages = {241-250},
+    pages = {241--250},
     url = {https://aclanthology.org/2021.cmcl-1.28},
     abstract = {Expectation-based theories of sentence processing posit that processing difficulty is determined by predictability in context. While predictability quantified via surprisal has gained empirical support, this representation-agnostic measure leaves open the question of how to best approximate the human comprehender's latent probability model. This work presents an incremental left-corner parser that incorporates information about both propositional content and syntactic categories into a single probability model. This parser can be trained to make parsing decisions conditioning on only one source of information, thus allowing a clean ablation of the relative contribution of propositional content and syntactic category information. Regression analyses show that surprisal estimates calculated from the full parser make a significant contribution to predicting self-paced reading times over those from the parser without syntactic category information, as well as a significant contribution to predicting eye-gaze durations over those from the parser without propositional content information. Taken together, these results suggest a role for propositional content and syntactic category information in incremental sentence processing.}
 }
@@ -1482,7 +1482,7 @@ year={2022} }
     title = {Comparison of structural parsers and neural language models as surprisal estimators},
     journal = {Frontiers in Artificial Intelligence},
     volume = {5},
-    number = {777963},
+    pages = {777963},
     url = {https://doi.org/10.3389/frai.2022.777963},
     abstract = {Expectation-based theories of sentence processing posit that processing difficulty is determined by predictability in context. While predictability quantified via surprisal has gained empirical support, this representation-agnostic measure leaves open the question of how to best approximate the human comprehender's latent probability model. This article first describes an incremental left-corner parser that incorporates information about common linguistic abstractions such as syntactic categories, predicate-argument structure, and morphological rules as a computational-level model of sentence processing. The article then evaluates a variety of structural parsers and deep neural language models as cognitive models of sentence processing by comparing the predictive power of their surprisal estimates on self-paced reading, eye-tracking, and fMRI data collected during real-time language processing. The results show that surprisal estimates from the proposed left-corner processing model deliver comparable and often superior fits to self-paced reading and eye-tracking data when compared to those from neural language models trained on much more data. This may suggest that the strong linguistic generalizations made by the proposed processing model may help predict humanlike processing costs that manifest in latency-based measures, even when the amount of training data is limited. Additionally, experiments using Transformer-based language models sharing the same primary architecture and training data show a surprising negative correlation between parameter count and fit to self-paced reading and eye-tracking data. These findings suggest that large-scale neural language models are making weaker generalizations based on patterns of lexical items rather than stronger, more humanlike generalizations based on linguistic structure.}
 }
@@ -1515,7 +1515,7 @@ year={2022} }
     title = {Token-wise decomposition of autoregressive language model hidden states for analyzing model predictions},
     booktitle = {Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics},
     pages = {10105--10117},
-	  url = {https://aclanthology.org/2023.acl-long.562},
+    url = {https://aclanthology.org/2023.acl-long.562},
     abstract = {While there is much recent interest in studying why Transformer-based large language models make predictions the way they do, the complex computations performed within each layer have made their behavior somewhat opaque. To mitigate this opacity, this work presents a linear decomposition of final hidden states from autoregressive language models based on each initial input token, which is exact for virtually all contemporary Transformer architectures. This decomposition allows the definition of probability distributions that ablate the contribution of specific input tokens, which can be used to analyze their influence on model probabilities over a sequence of upcoming words with only one forward pass from the model. Using the change in next-word probability as a measure of importance, this work first examines which context words make the biggest contribution to language model predictions. Regression experiments suggest that Transformer-based language models rely primarily on collocational associations, followed by linguistic factors such as syntactic dependencies and coreference relationships in making next-word predictions. Additionally, analyses using these measures to predict syntactic dependencies and coreferent mention spans show that collocational association and repetitions of the same token largely explain the language models' predictions on these tasks.}
 }
 
@@ -1524,8 +1524,19 @@ year={2022} }
     year = {2023},
     title = {Transformer-based language model surprisal predicts human reading times best with about two billion training tokens},
     booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2023},
-    url = {https://arxiv.org/abs/2304.11389},
+    pages = {1915--1921},
+    url = {https://aclanthology.org/2023.findings-emnlp.128},
     abstract = {Recent psycholinguistic studies have drawn conflicting conclusions about the relationship between the quality of a language model and the ability of its surprisal estimates to predict human reading times, which has been speculated to be due to the large gap in both the amount of training data and model capacity across studies. The current work aims to consolidate these findings by evaluating surprisal estimates from Transformer-based language model variants that vary systematically in the amount of training data and model capacity on their ability to predict human reading times. The results show that surprisal estimates from most variants with contemporary model capacities provide the best fit after seeing about two billion training tokens, after which they begin to diverge from humanlike expectations. Additionally, newly-trained smaller model variants reveal a 'tipping point' at convergence, after which the decrease in language model perplexity begins to result in poorer fits to human reading times. These results suggest that the massive amount of training data is mainly responsible for the poorer fit achieved by surprisal from larger pre-trained language models, and that a certain degree of model capacity is necessary for Transformer-based language models to capture humanlike expectations.}
+}
+
+@inproceedings{ohetal24eacl,
+    author = {Oh, Byung-Doh and Yue, Shisen and Schuler, William},
+    year = {2024},
+    title = {Frequency explains the inverse correlation of large language models' size, training data amount, and surprisal's fit to reading times},
+    booktitle = {Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics},
+    pages = {2644--2663},
+    url = {https://aclanthology.org/2024.eacl-long.162},
+    abstract = {Recent studies have shown that as Transformer-based language models become larger and are trained on very large amounts of data, the fit of their surprisal estimates to naturalistic human reading times degrades. The current work presents a series of analyses showing that word frequency is a key explanatory factor underlying these two trends. First, residual errors from four language model families on four corpora show that the inverse correlation between model size and fit to reading times is the strongest on the subset of least frequent words, which is driven by excessively accurate predictions of larger model variants. Additionally, training dynamics reveal that during later training steps, all model variants learn to predict rare words and that larger model variants do so more accurately, which explains the detrimental effect of both training data amount and model size on fit to reading times. Finally, a feature attribution analysis demonstrates that larger model variants are able to accurately predict rare words based on both an effectively longer context window size as well as stronger local associations compared to smaller model variants. Taken together, these results indicate that Transformer-based language models' surprisal estimates diverge from human-like expectations due to the superhumanly complex associations they learn for predicting rare words.}
 }
 
 @inproceedings{plantinga2018exploration,
