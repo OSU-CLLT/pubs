@@ -214,6 +214,26 @@
     abstract = "Grammar induction, the task of learning a set of grammatical rules from raw or minimally labeled text data, can provide clues about what kinds of syntactic structures are learnable without prior knowledge. Recent work (e.g., Kim et al., 2019; Zhu et al., 2020; Jin et al., 2021a) has achieved advances in unsupervised induction of probabilistic context-free grammars (PCFGs). However, categorial grammar induction has received less recent attention, despite allowing inducers to support a larger set of syntactic categories{---}due to restrictions on how categories can combine{---}and providing a transparent interface with compositional semantics, opening up possibilities for models that jointly learn form and meaning. Motivated by this, we propose a new model for inducing a basic (Ajdukiewicz, 1935; Bar-Hillel, 1953) categorial grammar. In contrast to earlier categorial grammar induction systems (e.g., Bisk and Hockenmaier, 2012), our model learns from raw data without any part-of-speech information. Experiments on child-directed speech show that our model attains a recall-homogeneity of 0.33 on average, which dramatically increases to 0.59 when a bias toward forward function application is added to the model.",
 }
 
+@inproceedings{clark-schuler-2024-categorial,
+    title = "Categorial Grammar Induction with Stochastic Category Selection",
+    author = "Clark, Christian  and
+      Schuler, William",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.258",
+    pages = "2893--2900",
+    abstract = "Grammar induction, the task of learning a set of syntactic rules from minimally annotated training data, provides a means of exploring the longstanding question of whether humans rely on innate knowledge to acquire language. Of the various formalisms available for grammar induction, categorial grammars provide an appealing option due to their transparent interface between syntax and semantics. However, to obtain competitive results, previous categorial grammar inducers have relied on shortcuts such as part-of-speech annotations or an ad hoc bias term in the objective function to ensure desirable branching behavior. We present a categorial grammar inducer that eliminates both shortcuts: it learns from raw data, and does not rely on a biased objective function. This improvement is achieved through a novel stochastic process used to select the set of available syntactic categories. On a corpus of English child-directed speech, the model attains a recall-homogeneity of 0.48, a large improvement over previous categorial grammar inducers.",
+}
+
 @article{Clarke13:Frontiers,
 AUTHOR={Clarke, Alasdair Daniel Francis  and  Elsner, Micha  and  Rohde, Hannah},
 TITLE={Where's Wally: The influence of visual salience on referring expression generation},
