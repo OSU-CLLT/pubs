@@ -239,6 +239,27 @@
     abstract = "In this paper, we examine how large language models (LLMs) solve multi-step problems under a language agent framework with three components: a generator, a discriminator, and a planning method. We investigate the practical utility of two advanced planning methods, iterative correction and tree search. We present a comprehensive analysis of how discrimination accuracy affects the overall performance of agents when using these two methods or a simpler method, re-ranking. Experiments on two tasks, text-to-SQL parsing and mathematical reasoning, show that: (1) advanced planning methods demand discriminators with at least 90{\%} accuracy to achieve significant improvements over re-ranking; (2) current LLMs{'} discrimination abilities have not met the needs of advanced planning methods to achieve such improvements; (3) with LLM-based discriminators, advanced planning methods may not adequately balance accuracy and efficiency. For example, compared to the other two methods, tree search is at least 10{--}20 times slower but leads to negligible performance gains, which hinders its real-world applications.",
 }
 
+@inproceedings{chun-etal-2026-beyond,
+    title = "Beyond Length: Context-Aware Expansion and Independence as Developmentally Sensitive Evaluation in Child Utterances",
+    author = "Chun, Jiyun  and
+      Fosler-Lussier, Eric  and
+      White, Michael  and
+      Perrault, Andrew",
+    editor = "Demberg, Vera  and
+      Inui, Kentaro  and
+      Marquez, Llu{\'i}s",
+    booktitle = "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.eacl-long.284/",
+    doi = "10.18653/v1/2026.eacl-long.284",
+    pages = "6010--6030",
+    ISBN = "979-8-89176-380-7",
+    abstract = "Evaluating the quality of children{'}s utterances in adult-child dialogue remains challenging due to insufficient context-sensitive metrics. Common proxies such as Mean Length of Utterance (MLU), lexical diversity (vocd-D), and readability indices (Flesch-Kincaid Grade Level, Gunning Fog Index) are dominated by length and ignore conversational context, missing aspects of response quality such as reasoning depth, topic maintenance, and discourse planning. We introduce an LLM-as-a-judge framework that first classifies the Previous Adult Utterance Type and then scores the child{'}s response along two axes: Expansion (contextual elaboration and inferential depth) and Independence (the child{'}s contribution to advancing the discourse). These axes reflect fundamental dimensions in child language development, where Expansion captures elaboration, clause combining, and causal and contrastive connectives. Independence captures initiative, topic control, decreasing reliance on adult scaffolding through growing self-regulation, and audience design. We establish developmental validity by showing age-related patterns and demonstrate predictive value by improving age estimation over common baselines. We further confirm semantic sensitivity by detecting differences tied to discourse relations. Our metrics align with human judgments, enabling large-scale evaluation. This shifts child utterance assessment from simply measuring length to evaluating how meaningfully the child{'}s speech contributes to and advances the conversation within its context."
+}
+
 @inproceedings{clark-etal-2025-linear,
     title = "Linear Recency Bias During Training Improves Transformers' Fit to Reading Times",
     author = "Clark, Christian  and
@@ -1228,6 +1249,27 @@ year = {2012}
   url       = {https://www.aclweb.org/anthology/D17-1127}
 }
 
+@inproceedings{lewis-etal-2026-vista,
+    title = "{VISTA}: Verification In Sequential Turn-based Assessment",
+    author = "Lewis, Ashley  and
+      Perrault, Andrew  and
+      Fosler-Lussier, Eric  and
+      White, Michael",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.1890/",
+    doi = "10.18653/v1/2026.acl-long.1890",
+    pages = "40685--40714",
+    ISBN = "979-8-89176-390-6",
+    abstract = "Hallucination{---}defined here as generated statements unsupported or contradicted by available evidence or conversational context{---}remains a major obstacle to using conversational AI systems in settings that demand factual reliability. Existing metrics evaluate isolated responses or treat unverifiable content as errors, limiting their use for multi-turn dialogue. We introduce VISTA (Verification In Sequential Turn-based Assessment), a framework for evaluating conversational factuality via claim-level verification and sequential consistency tracking. VISTA decomposes each turn into atomic claims, verifies them against trusted sources and dialogue history, and categorizes unverifiable statements (subjective, contradicted, lacking evidence, or abstaining). Across eight large language models and four dialogue factuality benchmarks (Ais, Begin, FaithDial, and Fade), VISTA substantially improves hallucination detection over FActScore and LLM-as-Judge baselines. Human evaluation confirms that VISTA{'}s decomposition improves annotator agreement and reveals inconsistencies in existing benchmarks. By modeling factuality as a dynamic property of conversation, VISTA offers a more transparent, human-aligned measure of truthfulness in dialogue systems."
+}
 
 @inproceedings{li2014profile,
   author    = {Li, Jiwei Li and Ritter, Alan and Hovy, Eduard H.},
